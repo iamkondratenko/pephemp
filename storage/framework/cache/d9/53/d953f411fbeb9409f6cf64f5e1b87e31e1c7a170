@@ -1,4 +1,4 @@
-1597248896a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:168:"title = "Demonstration"
+1597249414a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:168:"title = "Demonstration"
 url = "/"
 layout = "default"
 ==
@@ -7,7 +7,7 @@ layout = "default"
 {% partial 'site/bullets' %}
 {% partial 'products/catalog' %}
 </div>
-";s:5:"mtime";i:1597246816;s:6:"markup";s:111:"<div id="App">
+";s:5:"mtime";i:1597248718;s:6:"markup";s:111:"<div id="App">
 {% partial 'site/banner' %}
 {% partial 'site/bullets' %}
 {% partial 'products/catalog' %}
