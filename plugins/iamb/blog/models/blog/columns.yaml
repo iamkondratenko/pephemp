@@ -8,9 +8,6 @@ columns:
     picture:
         label: picture
         type: text
-    text:
-        label: text
-        type: text
     created_at:
         label: created_at
         type: datetime

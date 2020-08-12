@@ -10,14 +10,19 @@ fields:
             field: title
             type: slug
         type: text
+    description:
+        label: 'Короткое описание'
+        size: small
+        mode: tab
+        span: auto
+        type: markdown
     picture:
         label: Картинка
         mode: image
-        span: full
+        span: auto
         type: mediafinder
     text:
         label: 'Текст статьи'
         size: giant
-        mode: tab
         span: full
-        type: markdown
+        type: richeditor

@@ -110,4 +110,7 @@
   'iamb\\blog\\Plugin' => 'plugins/iamb/blog/Plugin.php',
   'iamb\\blog\\Controllers\\blog' => 'plugins/iamb/blog/controllers/blog.php',
   'iamb\\Blog\\Models\\Blog' => 'plugins/iamb/blog/models/Blog.php',
+  'RainLab\\User\\Components\\Session' => 'plugins/rainlab/user/components/Session.php',
+  'RainLab\\User\\Components\\Account' => 'plugins/rainlab/user/components/Account.php',
+  'RainLab\\User\\Components\\ResetPassword' => 'plugins/rainlab/user/components/ResetPassword.php',
 );

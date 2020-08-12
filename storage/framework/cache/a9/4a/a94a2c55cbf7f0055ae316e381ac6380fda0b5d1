@@ -1,0 +1,160 @@
+1597269688a:1:{s:20:"products/catalog.htm";a:6:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:4367:"[builderList productList]
+modelClass = "iamb\Productlist\Models\ProductList"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "slug"
+noRecordsMessage = "No records found"
+detailsPage = "home"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+<div class="catalog --container ancore" id="catalog-ancore">
+            <div class="catalog__header">
+                <h2 class="catalog__title">Каталог</h2>
+                <a href="#" class="catalog__header-price">Получить прайс</a>
+            </div>
+
+            <div class="catalog__products-section">
+                <aside class="catalog-homepage__filter">
+                    <div class="catalog-homepage__filter__title">категории:</div>
+                    <div class="catalog-homepage__filter-items">
+                        <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
+                        <a href="#catalog-proteins" class="catalog-homepage__filter-item" data-category="proteins">Протеiн</a>
+                        <a href="#catalog-superfoods" class="catalog-homepage__filter-item" data-category="superfoods">Суперфуди</a>
+                        <a href="#catalog-cosmetics" class="catalog-homepage__filter-item" data-category="cosmetics">Косметика</a>
+                    </div>
+                </aside>
+
+
+                <div class="catalog__products">
+                
+
+
+                    {% set records = productList.records %}
+                    {% set displayColumn = productList.displayColumn %}
+                    {% set noRecordsMessage = productList.noRecordsMessage %}
+                    {% set detailsPage = productList.detailsPage %}
+                    {% set detailsKeyColumn = productList.detailsKeyColumn %}
+                    {% set detailsUrlParameter = productList.detailsUrlParameter %}
+                
+                    <div class="catalog__product-items">
+
+                        {% for record in records %}
+                            <div class="catalog__product-item" data-category="{{ record.category }}" data-productid="{{ record.id }}">
+                                {# Use spaceless tag to remove spaces inside the A tag. #}
+                                {% spaceless %}
+                                    <a href="/product/{{ record.slug }}" class="product-item__link">
+                                                    <div class="product-item__image-holder">
+                                                        <img src="{{ record.picture|media }}" alt="" class="product-item__image-item">
+                                                    </div>
+                                                    <div class="product-item__info">
+                                                        <h3 class="product-item__info-title">{{ record.title }}</h3>
+                                                        <p class="product-item__info-description">
+                                                            {{ record.description|raw }}
+                                                        </p>
+
+
+
+
+                                                    </div>
+                                                </a>
+                                                <div class="product-item__cart">
+                                                    <span class="product-item__cart-price">{{ record.price }}</span>
+                                                    <button class="product-item__card-add" id="pid{{ record.id }}">
+                                                            <span class="product-item__card-add__icon">
+
+                                                            </span>Додати в кошик
+                                                    </button>
+                                                </div>
+                                {% endspaceless %}
+                            </div>
+                        {% else %}
+                            <li class="no-data">{{ noRecordsMessage }}</li>
+                        {% endfor %}
+
+                        
+
+    </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>";s:5:"mtime";i:1597239595;s:6:"markup";s:4072:"<div class="catalog --container ancore" id="catalog-ancore">
+            <div class="catalog__header">
+                <h2 class="catalog__title">Каталог</h2>
+                <a href="#" class="catalog__header-price">Получить прайс</a>
+            </div>
+
+            <div class="catalog__products-section">
+                <aside class="catalog-homepage__filter">
+                    <div class="catalog-homepage__filter__title">категории:</div>
+                    <div class="catalog-homepage__filter-items">
+                        <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
+                        <a href="#catalog-proteins" class="catalog-homepage__filter-item" data-category="proteins">Протеiн</a>
+                        <a href="#catalog-superfoods" class="catalog-homepage__filter-item" data-category="superfoods">Суперфуди</a>
+                        <a href="#catalog-cosmetics" class="catalog-homepage__filter-item" data-category="cosmetics">Косметика</a>
+                    </div>
+                </aside>
+
+
+                <div class="catalog__products">
+                
+
+
+                    {% set records = productList.records %}
+                    {% set displayColumn = productList.displayColumn %}
+                    {% set noRecordsMessage = productList.noRecordsMessage %}
+                    {% set detailsPage = productList.detailsPage %}
+                    {% set detailsKeyColumn = productList.detailsKeyColumn %}
+                    {% set detailsUrlParameter = productList.detailsUrlParameter %}
+                
+                    <div class="catalog__product-items">
+
+                        {% for record in records %}
+                            <div class="catalog__product-item" data-category="{{ record.category }}" data-productid="{{ record.id }}">
+                                {# Use spaceless tag to remove spaces inside the A tag. #}
+                                {% spaceless %}
+                                    <a href="/product/{{ record.slug }}" class="product-item__link">
+                                                    <div class="product-item__image-holder">
+                                                        <img src="{{ record.picture|media }}" alt="" class="product-item__image-item">
+                                                    </div>
+                                                    <div class="product-item__info">
+                                                        <h3 class="product-item__info-title">{{ record.title }}</h3>
+                                                        <p class="product-item__info-description">
+                                                            {{ record.description|raw }}
+                                                        </p>
+
+
+
+
+                                                    </div>
+                                                </a>
+                                                <div class="product-item__cart">
+                                                    <span class="product-item__cart-price">{{ record.price }}</span>
+                                                    <button class="product-item__card-add" id="pid{{ record.id }}">
+                                                            <span class="product-item__card-add__icon">
+
+                                                            </span>Додати в кошик
+                                                    </button>
+                                                </div>
+                                {% endspaceless %}
+                            </div>
+                        {% else %}
+                            <li class="no-data">{{ noRecordsMessage }}</li>
+                        {% endfor %}
+
+                        
+
+    </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>";s:4:"code";N;s:23:"builderList productList";a:9:{s:10:"modelClass";s:35:"iamb\Productlist\Models\ProductList";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:4:"home";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}}}
