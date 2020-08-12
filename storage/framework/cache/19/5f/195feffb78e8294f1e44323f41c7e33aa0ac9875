@@ -1,4 +1,4 @@
-1597219145a:1:{s:11:"product.htm";a:10:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:9564:"title = "Product"
+1597240207a:1:{s:11:"product.htm";a:10:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:9564:"title = "Product"
 url = "/product/:slug"
 layout = "default"
 is_hidden = 0
@@ -174,7 +174,7 @@ notFoundMessage = "Record not found"
 {% endif %}
 
 
-</div>";s:5:"mtime";i:1597178861;s:6:"markup";s:9275:"<div id="App">
+</div>";s:5:"mtime";i:1597239595;s:6:"markup";s:9275:"<div id="App">
 {% set record = productDetails.record %}
 {% set displayColumn = productDetails.displayColumn %}
 {% set notFoundMessage = productDetails.notFoundMessage %}

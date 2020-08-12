@@ -1,4 +1,4 @@
-1597219145a:1:{s:20:"products/catalog.htm";a:6:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:4367:"[builderList productList]
+1597240207a:1:{s:20:"products/catalog.htm";a:6:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:4367:"[builderList productList]
 modelClass = "iamb\Productlist\Models\ProductList"
 scope = "-"
 scopeValue = "{{ :scope }}"
@@ -83,7 +83,7 @@ pageNumber = "{{ :page }}"
 
 
             </div>
-        </div>";s:5:"mtime";i:1597165672;s:6:"markup";s:4072:"<div class="catalog --container ancore" id="catalog-ancore">
+        </div>";s:5:"mtime";i:1597239595;s:6:"markup";s:4072:"<div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
                 <h2 class="catalog__title">Каталог</h2>
                 <a href="#" class="catalog__header-price">Получить прайс</a>
