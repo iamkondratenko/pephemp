@@ -1,0 +1,10 @@
+name: ProductList
+form: $/iamb/productlist/models/productlist/fields.yaml
+modelClass: iamb\Productlist\Models\ProductList
+defaultRedirect: iamb/productlist/productlist
+create:
+    redirect: 'iamb/productlist/productlist/update/:id'
+    redirectClose: iamb/productlist/productlist
+update:
+    redirect: iamb/productlist/productlist
+    redirectClose: iamb/productlist/productlist

@@ -1,0 +1,11 @@
+plugin:
+    name: 'iamb.productlist::lang.plugin.name'
+    description: 'iamb.productlist::lang.plugin.description'
+    author: 'Alex Kondratenko'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    productList:
+        label: Товары
+        url: iamb/productlist/productlist
+        icon: icon-align-justify
