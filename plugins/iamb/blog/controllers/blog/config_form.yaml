@@ -1,0 +1,10 @@
+name: Blog
+form: $/iamb/blog/models/blog/fields.yaml
+modelClass: iamb\Blog\Models\Blog
+defaultRedirect: iamb/blog/blog
+create:
+    redirect: 'iamb/blog/blog/update/:id'
+    redirectClose: iamb/blog/blog
+update:
+    redirect: iamb/blog/blog
+    redirectClose: iamb/blog/blog

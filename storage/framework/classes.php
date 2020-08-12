@@ -106,4 +106,8 @@
   'IPriceGroup\\OcApiPlugin\\Classes\\RoutesManager' => 'plugins/ipricegroup/ocapiplugin/classes/RoutesManager.php',
   'IPriceGroup\\OcApiPlugin\\Classes\\ApiControllersManager' => 'plugins/ipricegroup/ocapiplugin/classes/ApiControllersManager.php',
   'rainlab\\user\\Controllers\\users' => 'plugins/rainlab/user/controllers/users.php',
+  'iamb\\fdsdfsdfsdf\\Plugin' => 'plugins/iamb/fdsdfsdfsdf/Plugin.php',
+  'iamb\\blog\\Plugin' => 'plugins/iamb/blog/Plugin.php',
+  'iamb\\blog\\Controllers\\blog' => 'plugins/iamb/blog/controllers/blog.php',
+  'iamb\\Blog\\Models\\Blog' => 'plugins/iamb/blog/models/Blog.php',
 );

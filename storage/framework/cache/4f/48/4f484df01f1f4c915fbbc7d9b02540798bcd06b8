@@ -1,4 +1,4 @@
-1597219145a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19753:"==
+1597247874a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19753:"==
 <div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </div>";s:5:"mtime";i:1597173294;s:6:"markup";s:19750:"<div id="App-footer">
+    </div>";s:5:"mtime";i:1597239595;s:6:"markup";s:19750:"<div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
                 <h3 class="subscribe-section__title">Пiдписатися на новини</h3>

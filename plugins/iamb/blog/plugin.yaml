@@ -1,0 +1,11 @@
+plugin:
+    name: 'iamb.blog::lang.plugin.name'
+    description: 'iamb.blog::lang.plugin.description'
+    author: 'Alex Kondratenko'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Блог
+        url: iamb/blog/blog
+        icon: icon-book
