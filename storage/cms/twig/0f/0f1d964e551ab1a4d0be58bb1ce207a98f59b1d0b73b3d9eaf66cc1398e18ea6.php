@@ -49,6 +49,10 @@ class __TwigTemplate_bfe72a6e8cdec2d6ac5e5555a8b72304ffc8c3588fa46ff9361c52dd18c
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("products/catalog"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         // line 5
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("blog/blog"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 6
         echo "</div>";
     }
 
@@ -64,7 +68,7 @@ class __TwigTemplate_bfe72a6e8cdec2d6ac5e5555a8b72304ffc8c3588fa46ff9361c52dd18c
 
     public function getDebugInfo()
     {
-        return array (  52 => 5,  48 => 4,  44 => 3,  40 => 2,  37 => 1,);
+        return array (  56 => 6,  52 => 5,  48 => 4,  44 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -73,6 +77,7 @@ class __TwigTemplate_bfe72a6e8cdec2d6ac5e5555a8b72304ffc8c3588fa46ff9361c52dd18c
 {% partial 'site/banner' %}
 {% partial 'site/bullets' %}
 {% partial 'products/catalog' %}
+{% partial 'blog/blog' %}
 </div>", "/Users/alexkondratenko/gitlab/pep-hemp/themes/demo/pages/home.htm", "");
     }
 }

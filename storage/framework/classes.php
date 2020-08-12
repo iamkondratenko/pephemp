@@ -106,4 +106,11 @@
   'IPriceGroup\\OcApiPlugin\\Classes\\RoutesManager' => 'plugins/ipricegroup/ocapiplugin/classes/RoutesManager.php',
   'IPriceGroup\\OcApiPlugin\\Classes\\ApiControllersManager' => 'plugins/ipricegroup/ocapiplugin/classes/ApiControllersManager.php',
   'rainlab\\user\\Controllers\\users' => 'plugins/rainlab/user/controllers/users.php',
+  'RainLab\\User\\Components\\Session' => 'plugins/rainlab/user/components/Session.php',
+  'RainLab\\User\\Components\\Account' => 'plugins/rainlab/user/components/Account.php',
+  'RainLab\\User\\Components\\ResetPassword' => 'plugins/rainlab/user/components/ResetPassword.php',
+  'iamb\\categories\\Plugin' => 'plugins/iamb/categories/Plugin.php',
+  'iamb\\categorieslist\\Plugin' => 'plugins/iamb/categorieslist/Plugin.php',
+  'iamb\\xfgdsfgdsfg\\Plugin' => 'plugins/iamb/xfgdsfgdsfg/Plugin.php',
+  'iamb\\dssaassasd\\Plugin' => 'plugins/iamb/dssaassasd/Plugin.php',
 );
