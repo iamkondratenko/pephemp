@@ -47,33 +47,77 @@ class __TwigTemplate_6beca340058656a218a87c704925e9e6d33b2f6c670404ef273dde5e692
 
             <div class=\"main-header__dropped-menu\">
                 <div class=\"dropped-menu__items\">
-                    <a href=\"/catalog/#catalog-proteins\" class=\"dropped-menu__item\">
-                        <div class=\"menu-item__img-holder\">
-                            <img class=\"menu-item__img\" src=\"";
+                
+                ";
+        // line 15
+        $context["records"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "records", [], "any", false, false, false, 15);
         // line 16
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/products/protein.png");
-        echo "\" alt=\"\">
-                        </div>
-                        <div class=\"menu-item__category-title\">Протеин</div>
-                    </a>
-                    <a href=\"/catalog/#catalog-superfoods\" class=\"dropped-menu__item\">
+        echo "                ";
+        $context["displayColumn"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "displayColumn", [], "any", false, false, false, 16);
+        // line 17
+        echo "                ";
+        $context["noRecordsMessage"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "noRecordsMessage", [], "any", false, false, false, 17);
+        // line 18
+        echo "                ";
+        $context["detailsPage"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "detailsPage", [], "any", false, false, false, 18);
+        // line 19
+        echo "                ";
+        $context["detailsKeyColumn"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "detailsKeyColumn", [], "any", false, false, false, 19);
+        // line 20
+        echo "                ";
+        $context["detailsUrlParameter"] = twig_get_attribute($this->env, $this->source, ($context["menuList"] ?? null), "detailsUrlParameter", [], "any", false, false, false, 20);
+        // line 21
+        echo "
+
+    ";
+        // line 23
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["records"] ?? null));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
+            // line 24
+            echo "        
+            ";
+            // line 26
+            echo "            ";
+            ob_start();
+            // line 27
+            echo "                
+                <a href=\"/catalog/#catalog-";
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 28), "html", null, true);
+            echo "\" class=\"dropped-menu__item\">
                         <div class=\"menu-item__img-holder\">
                             <img class=\"menu-item__img\" src=\"";
-        // line 22
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/products/oliya_food.png");
-        echo "\" alt=\"\">
+            // line 30
+            echo $this->extensions['System\Twig\Extension']->mediaFilter(twig_get_attribute($this->env, $this->source, $context["record"], "picture", [], "any", false, false, false, 30));
+            echo "\" alt=\"\">
                         </div>
-                        <div class=\"menu-item__category-title\">Суперфуд</div>
+                        <div class=\"menu-item__category-title\">";
+            // line 32
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "category_title", [], "any", false, false, false, 32), "html", null, true);
+            echo "</div>
                     </a>
-                    <a href=\"/catalog/#catalog-cosmetics\" class=\"dropped-menu__item\">
-                        <div class=\"menu-item__img-holder\">
-                            <img class=\"menu-item__img\" src=\"";
-        // line 28
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/products/milo.png");
-        echo "\" alt=\"\">
-                        </div>
-                        <div class=\"menu-item__category-title\">Косметика</div>
-                    </a>
+                
+            ";
+            echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+            // line 36
+            echo "        
+    ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 38
+            echo "        <li class=\"no-data\">";
+            echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
+            echo "</li>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 40
+        echo "
                 </div>
             </div>
 
@@ -83,7 +127,7 @@ class __TwigTemplate_6beca340058656a218a87c704925e9e6d33b2f6c670404ef273dde5e692
 
             <a href=\"/\" class=\"main-header__item --menu-logo\">
                 <img class=\"menu_logo_pic\" src=\"";
-        // line 40
+        // line 49
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/Logo_pep_hemp.png");
         echo "\">
             </a>
@@ -159,7 +203,7 @@ class __TwigTemplate_6beca340058656a218a87c704925e9e6d33b2f6c670404ef273dde5e692
 
     public function getDebugInfo()
     {
-        return array (  87 => 40,  72 => 28,  63 => 22,  54 => 16,  37 => 1,);
+        return array (  131 => 49,  120 => 40,  111 => 38,  105 => 36,  98 => 32,  93 => 30,  88 => 28,  85 => 27,  82 => 26,  79 => 24,  74 => 23,  70 => 21,  67 => 20,  64 => 19,  61 => 18,  58 => 17,  55 => 16,  53 => 15,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -177,24 +221,33 @@ class __TwigTemplate_6beca340058656a218a87c704925e9e6d33b2f6c670404ef273dde5e692
 
             <div class=\"main-header__dropped-menu\">
                 <div class=\"dropped-menu__items\">
-                    <a href=\"/catalog/#catalog-proteins\" class=\"dropped-menu__item\">
+                
+                {% set records = menuList.records %}
+                {% set displayColumn = menuList.displayColumn %}
+                {% set noRecordsMessage = menuList.noRecordsMessage %}
+                {% set detailsPage = menuList.detailsPage %}
+                {% set detailsKeyColumn = menuList.detailsKeyColumn %}
+                {% set detailsUrlParameter = menuList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+        
+            {# Use spaceless tag to remove spaces inside the A tag. #}
+            {% spaceless %}
+                
+                <a href=\"/catalog/#catalog-{{ record.slug }}\" class=\"dropped-menu__item\">
                         <div class=\"menu-item__img-holder\">
-                            <img class=\"menu-item__img\" src=\"{{ '/assets/products/protein.png'|theme }}\" alt=\"\">
+                            <img class=\"menu-item__img\" src=\"{{ record.picture|media }}\" alt=\"\">
                         </div>
-                        <div class=\"menu-item__category-title\">Протеин</div>
+                        <div class=\"menu-item__category-title\">{{ record.category_title }}</div>
                     </a>
-                    <a href=\"/catalog/#catalog-superfoods\" class=\"dropped-menu__item\">
-                        <div class=\"menu-item__img-holder\">
-                            <img class=\"menu-item__img\" src=\"{{ '/assets/products/oliya_food.png'|theme }}\" alt=\"\">
-                        </div>
-                        <div class=\"menu-item__category-title\">Суперфуд</div>
-                    </a>
-                    <a href=\"/catalog/#catalog-cosmetics\" class=\"dropped-menu__item\">
-                        <div class=\"menu-item__img-holder\">
-                            <img class=\"menu-item__img\" src=\"{{ '/assets/products/milo.png'|theme }}\" alt=\"\">
-                        </div>
-                        <div class=\"menu-item__category-title\">Косметика</div>
-                    </a>
+                
+            {% endspaceless %}
+        
+    {% else %}
+        <li class=\"no-data\">{{ noRecordsMessage }}</li>
+    {% endfor %}
+
                 </div>
             </div>
 

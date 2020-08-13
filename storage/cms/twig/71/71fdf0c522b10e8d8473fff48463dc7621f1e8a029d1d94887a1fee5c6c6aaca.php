@@ -45,9 +45,65 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
                     <div class=\"catalog-homepage__filter__title\">категории:</div>
                     <div class=\"catalog-homepage__filter-items\">
                         <a href=\"#catalog-all\" class=\"catalog-homepage__filter-item --filter-item-active\" data-category=\"all\">Всi</a>
-                        <a href=\"#catalog-proteins\" class=\"catalog-homepage__filter-item\" data-category=\"proteins\">Протеiн</a>
-                        <a href=\"#catalog-superfoods\" class=\"catalog-homepage__filter-item\" data-category=\"superfoods\">Суперфуди</a>
-                        <a href=\"#catalog-cosmetics\" class=\"catalog-homepage__filter-item\" data-category=\"cosmetics\">Косметика</a>
+                        
+                        ";
+        // line 13
+        $context["records"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "records", [], "any", false, false, false, 13);
+        // line 14
+        echo "                        ";
+        $context["displayColumn"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "displayColumn", [], "any", false, false, false, 14);
+        // line 15
+        echo "                        ";
+        $context["noRecordsMessage"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "noRecordsMessage", [], "any", false, false, false, 15);
+        // line 16
+        echo "                        ";
+        $context["detailsPage"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "detailsPage", [], "any", false, false, false, 16);
+        // line 17
+        echo "                        ";
+        $context["detailsKeyColumn"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "detailsKeyColumn", [], "any", false, false, false, 17);
+        // line 18
+        echo "                        ";
+        $context["detailsUrlParameter"] = twig_get_attribute($this->env, $this->source, ($context["categoryList"] ?? null), "detailsUrlParameter", [], "any", false, false, false, 18);
+        // line 19
+        echo "
+                        
+                            ";
+        // line 21
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["records"] ?? null));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
+            // line 22
+            echo "                                
+                                    ";
+            // line 24
+            echo "                                    ";
+            ob_start();
+            // line 25
+            echo "                                        <a href=\"#catalog-";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 25), "html", null, true);
+            echo "\" class=\"catalog-homepage__filter-item\" data-category=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 25), "html", null, true);
+            echo "\">Протеiн</a>
+                                    ";
+            echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+            // line 27
+            echo "                                
+                            ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 29
+            echo "                                <li class=\"no-data\">";
+            echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
+            echo "</li>
+                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 31
+        echo " 
                     </div>
                 </aside>
 
@@ -57,62 +113,62 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
 
 
                     ";
-        // line 23
-        $context["records"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "records", [], "any", false, false, false, 23);
-        // line 24
+        // line 40
+        $context["records"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "records", [], "any", false, false, false, 40);
+        // line 41
         echo "                    ";
-        $context["displayColumn"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "displayColumn", [], "any", false, false, false, 24);
-        // line 25
+        $context["displayColumn"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "displayColumn", [], "any", false, false, false, 41);
+        // line 42
         echo "                    ";
-        $context["noRecordsMessage"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "noRecordsMessage", [], "any", false, false, false, 25);
-        // line 26
+        $context["noRecordsMessage"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "noRecordsMessage", [], "any", false, false, false, 42);
+        // line 43
         echo "                    ";
-        $context["detailsPage"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsPage", [], "any", false, false, false, 26);
-        // line 27
+        $context["detailsPage"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsPage", [], "any", false, false, false, 43);
+        // line 44
         echo "                    ";
-        $context["detailsKeyColumn"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsKeyColumn", [], "any", false, false, false, 27);
-        // line 28
+        $context["detailsKeyColumn"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsKeyColumn", [], "any", false, false, false, 44);
+        // line 45
         echo "                    ";
-        $context["detailsUrlParameter"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsUrlParameter", [], "any", false, false, false, 28);
-        // line 29
+        $context["detailsUrlParameter"] = twig_get_attribute($this->env, $this->source, ($context["productList"] ?? null), "detailsUrlParameter", [], "any", false, false, false, 45);
+        // line 46
         echo "                
                     <div class=\"catalog__product-items\">
 
                         ";
-        // line 32
+        // line 49
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["records"] ?? null));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
-            // line 33
+            // line 50
             echo "                            <div class=\"catalog__product-item\" data-category=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "category", [], "any", false, false, false, 33), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "category", [], "any", false, false, false, 50), "html", null, true);
             echo "\" data-productid=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", [], "any", false, false, false, 33), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", [], "any", false, false, false, 50), "html", null, true);
             echo "\">
                                 ";
-            // line 35
+            // line 52
             echo "                                ";
             ob_start();
-            // line 36
+            // line 53
             echo "                                    <a href=\"/product/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 36), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 53), "html", null, true);
             echo "\" class=\"product-item__link\">
                                                     <div class=\"product-item__image-holder\">
                                                         <img src=\"";
-            // line 38
-            echo $this->extensions['System\Twig\Extension']->mediaFilter(twig_get_attribute($this->env, $this->source, $context["record"], "picture", [], "any", false, false, false, 38));
+            // line 55
+            echo $this->extensions['System\Twig\Extension']->mediaFilter(twig_get_attribute($this->env, $this->source, $context["record"], "picture", [], "any", false, false, false, 55));
             echo "\" alt=\"\" class=\"product-item__image-item\">
                                                     </div>
                                                     <div class=\"product-item__info\">
                                                         <h3 class=\"product-item__info-title\">";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "title", [], "any", false, false, false, 41), "html", null, true);
+            // line 58
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "title", [], "any", false, false, false, 58), "html", null, true);
             echo "</h3>
                                                         <p class=\"product-item__info-description\">
                                                             ";
-            // line 43
-            echo twig_get_attribute($this->env, $this->source, $context["record"], "description", [], "any", false, false, false, 43);
+            // line 60
+            echo twig_get_attribute($this->env, $this->source, $context["record"], "description", [], "any", false, false, false, 60);
             echo "
                                                         </p>
 
@@ -123,12 +179,12 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
                                                 </a>
                                                 <div class=\"product-item__cart\">
                                                     <span class=\"product-item__cart-price\">";
-            // line 52
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "price", [], "any", false, false, false, 52), "html", null, true);
+            // line 69
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "price", [], "any", false, false, false, 69), "html", null, true);
             echo "</span>
                                                     <button class=\"product-item__card-add\" id=\"pid";
-            // line 53
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", [], "any", false, false, false, 53), "html", null, true);
+            // line 70
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", [], "any", false, false, false, 70), "html", null, true);
             echo "\">
                                                             <span class=\"product-item__card-add__icon\">
 
@@ -137,13 +193,13 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
                                                 </div>
                                 ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 60
+            // line 77
             echo "                            </div>
                         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 62
+            // line 79
             echo "                            <li class=\"no-data\">";
             echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
             echo "</li>
@@ -152,7 +208,7 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 64
+        // line 81
         echo "
                         
 
@@ -179,7 +235,7 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
 
     public function getDebugInfo()
     {
-        return array (  156 => 64,  147 => 62,  141 => 60,  131 => 53,  127 => 52,  115 => 43,  110 => 41,  104 => 38,  98 => 36,  95 => 35,  88 => 33,  83 => 32,  78 => 29,  75 => 28,  72 => 27,  69 => 26,  66 => 25,  63 => 24,  61 => 23,  37 => 1,);
+        return array (  212 => 81,  203 => 79,  197 => 77,  187 => 70,  183 => 69,  171 => 60,  166 => 58,  160 => 55,  154 => 53,  151 => 52,  144 => 50,  139 => 49,  134 => 46,  131 => 45,  128 => 44,  125 => 43,  122 => 42,  119 => 41,  117 => 40,  106 => 31,  97 => 29,  91 => 27,  83 => 25,  80 => 24,  77 => 22,  72 => 21,  68 => 19,  65 => 18,  62 => 17,  59 => 16,  56 => 15,  53 => 14,  51 => 13,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -195,9 +251,26 @@ class __TwigTemplate_003331ba88bf3b611b957ac2438ef355e2b0ac640a7bed1460a0a502155
                     <div class=\"catalog-homepage__filter__title\">категории:</div>
                     <div class=\"catalog-homepage__filter-items\">
                         <a href=\"#catalog-all\" class=\"catalog-homepage__filter-item --filter-item-active\" data-category=\"all\">Всi</a>
-                        <a href=\"#catalog-proteins\" class=\"catalog-homepage__filter-item\" data-category=\"proteins\">Протеiн</a>
-                        <a href=\"#catalog-superfoods\" class=\"catalog-homepage__filter-item\" data-category=\"superfoods\">Суперфуди</a>
-                        <a href=\"#catalog-cosmetics\" class=\"catalog-homepage__filter-item\" data-category=\"cosmetics\">Косметика</a>
+                        
+                        {% set records = categoryList.records %}
+                        {% set displayColumn = categoryList.displayColumn %}
+                        {% set noRecordsMessage = categoryList.noRecordsMessage %}
+                        {% set detailsPage = categoryList.detailsPage %}
+                        {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
+                        {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
+
+                        
+                            {% for record in records %}
+                                
+                                    {# Use spaceless tag to remove spaces inside the A tag. #}
+                                    {% spaceless %}
+                                        <a href=\"#catalog-{{ record.slug }}\" class=\"catalog-homepage__filter-item\" data-category=\"{{ record.slug }}\">Протеiн</a>
+                                    {% endspaceless %}
+                                
+                            {% else %}
+                                <li class=\"no-data\">{{ noRecordsMessage }}</li>
+                            {% endfor %}
+ 
                     </div>
                 </aside>
 

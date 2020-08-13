@@ -8,6 +8,16 @@ detailsPage = "home"
 detailsKeyColumn = "slug"
 detailsUrlParameter = "slug"
 pageNumber = "{{ :page }}"
+
+[builderList categoryList]
+modelClass = "iamb\Productlist\Models\MenuList"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 <div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
@@ -20,9 +30,26 @@ pageNumber = "{{ :page }}"
                     <div class="catalog-homepage__filter__title">категории:</div>
                     <div class="catalog-homepage__filter-items">
                         <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
-                        <a href="#catalog-proteins" class="catalog-homepage__filter-item" data-category="proteins">Протеiн</a>
-                        <a href="#catalog-superfoods" class="catalog-homepage__filter-item" data-category="superfoods">Суперфуди</a>
-                        <a href="#catalog-cosmetics" class="catalog-homepage__filter-item" data-category="cosmetics">Косметика</a>
+                        
+                        {% set records = categoryList.records %}
+                        {% set displayColumn = categoryList.displayColumn %}
+                        {% set noRecordsMessage = categoryList.noRecordsMessage %}
+                        {% set detailsPage = categoryList.detailsPage %}
+                        {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
+                        {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
+
+                        
+                            {% for record in records %}
+                                
+                                    {# Use spaceless tag to remove spaces inside the A tag. #}
+                                    {% spaceless %}
+                                        <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
+                                    {% endspaceless %}
+                                
+                            {% else %}
+                                <li class="no-data">{{ noRecordsMessage }}</li>
+                            {% endfor %}
+ 
                     </div>
                 </aside>
 

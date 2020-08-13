@@ -113,4 +113,11 @@
   'RainLab\\User\\Components\\Session' => 'plugins/rainlab/user/components/Session.php',
   'RainLab\\User\\Components\\Account' => 'plugins/rainlab/user/components/Account.php',
   'RainLab\\User\\Components\\ResetPassword' => 'plugins/rainlab/user/components/ResetPassword.php',
+  'iamb\\categorymenu\\Plugin' => 'plugins/iamb/categorymenu/Plugin.php',
+  'iamb\\categorymenu\\Controllers\\categorymenu' => 'plugins/iamb/categorymenu/controllers/categorymenu.php',
+  'iamb\\Categorymenu\\Models\\CategoryMenu' => 'plugins/iamb/categorymenu/models/CategoryMenu.php',
+  'iamb\\productlist\\Controllers\\categorylist' => 'plugins/iamb/productlist/controllers/categorylist.php',
+  'iamb\\Productlist\\Models\\MenuList' => 'plugins/iamb/productlist/models/MenuList.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
+  'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
 );

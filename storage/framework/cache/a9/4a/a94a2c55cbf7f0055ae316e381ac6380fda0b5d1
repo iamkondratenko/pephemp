@@ -1,4 +1,4 @@
-1597269688a:1:{s:20:"products/catalog.htm";a:6:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:4367:"[builderList productList]
+1597305973a:1:{s:20:"products/catalog.htm";a:7:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:5379:"[builderList productList]
 modelClass = "iamb\Productlist\Models\ProductList"
 scope = "-"
 scopeValue = "{{ :scope }}"
@@ -7,6 +7,16 @@ noRecordsMessage = "No records found"
 detailsPage = "home"
 detailsKeyColumn = "slug"
 detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+
+[builderList categoryList]
+modelClass = "iamb\Productlist\Models\MenuList"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
 <div class="catalog --container ancore" id="catalog-ancore">
@@ -20,9 +30,26 @@ pageNumber = "{{ :page }}"
                     <div class="catalog-homepage__filter__title">категории:</div>
                     <div class="catalog-homepage__filter-items">
                         <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
-                        <a href="#catalog-proteins" class="catalog-homepage__filter-item" data-category="proteins">Протеiн</a>
-                        <a href="#catalog-superfoods" class="catalog-homepage__filter-item" data-category="superfoods">Суперфуди</a>
-                        <a href="#catalog-cosmetics" class="catalog-homepage__filter-item" data-category="cosmetics">Косметика</a>
+                        
+                        {% set records = categoryList.records %}
+                        {% set displayColumn = categoryList.displayColumn %}
+                        {% set noRecordsMessage = categoryList.noRecordsMessage %}
+                        {% set detailsPage = categoryList.detailsPage %}
+                        {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
+                        {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
+
+                        
+                            {% for record in records %}
+                                
+                                    {# Use spaceless tag to remove spaces inside the A tag. #}
+                                    {% spaceless %}
+                                        <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
+                                    {% endspaceless %}
+                                
+                            {% else %}
+                                <li class="no-data">{{ noRecordsMessage }}</li>
+                            {% endfor %}
+ 
                     </div>
                 </aside>
 
@@ -83,7 +110,7 @@ pageNumber = "{{ :page }}"
 
 
             </div>
-        </div>";s:5:"mtime";i:1597239595;s:6:"markup";s:4072:"<div class="catalog --container ancore" id="catalog-ancore">
+        </div>";s:5:"mtime";i:1597301590;s:6:"markup";s:4848:"<div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
                 <h2 class="catalog__title">Каталог</h2>
                 <a href="#" class="catalog__header-price">Получить прайс</a>
@@ -94,9 +121,26 @@ pageNumber = "{{ :page }}"
                     <div class="catalog-homepage__filter__title">категории:</div>
                     <div class="catalog-homepage__filter-items">
                         <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
-                        <a href="#catalog-proteins" class="catalog-homepage__filter-item" data-category="proteins">Протеiн</a>
-                        <a href="#catalog-superfoods" class="catalog-homepage__filter-item" data-category="superfoods">Суперфуди</a>
-                        <a href="#catalog-cosmetics" class="catalog-homepage__filter-item" data-category="cosmetics">Косметика</a>
+                        
+                        {% set records = categoryList.records %}
+                        {% set displayColumn = categoryList.displayColumn %}
+                        {% set noRecordsMessage = categoryList.noRecordsMessage %}
+                        {% set detailsPage = categoryList.detailsPage %}
+                        {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
+                        {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
+
+                        
+                            {% for record in records %}
+                                
+                                    {# Use spaceless tag to remove spaces inside the A tag. #}
+                                    {% spaceless %}
+                                        <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
+                                    {% endspaceless %}
+                                
+                            {% else %}
+                                <li class="no-data">{{ noRecordsMessage }}</li>
+                            {% endfor %}
+ 
                     </div>
                 </aside>
 
@@ -157,4 +201,4 @@ pageNumber = "{{ :page }}"
 
 
             </div>
-        </div>";s:4:"code";N;s:23:"builderList productList";a:9:{s:10:"modelClass";s:35:"iamb\Productlist\Models\ProductList";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:4:"home";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+        </div>";s:4:"code";N;s:23:"builderList productList";a:9:{s:10:"modelClass";s:35:"iamb\Productlist\Models\ProductList";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:4:"home";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}s:24:"builderList categoryList";a:8:{s:10:"modelClass";s:32:"iamb\Productlist\Models\MenuList";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

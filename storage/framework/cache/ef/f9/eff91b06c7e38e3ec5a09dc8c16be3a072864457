@@ -1,4 +1,14 @@
-1597269488a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:6551:"<div id="App-header">
+1597305974a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:6830:"[builderList menuList]
+modelClass = "iamb\Productlist\Models\MenuList"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div id="App-header">
     <header class="main-header" id="main-header">
         <div class="main-header__items">
             <a href="/" class="main-header__item --menu-item">
@@ -11,24 +21,33 @@
 
             <div class="main-header__dropped-menu">
                 <div class="dropped-menu__items">
-                    <a href="/catalog/#catalog-proteins" class="dropped-menu__item">
+                
+                {% set records = menuList.records %}
+                {% set displayColumn = menuList.displayColumn %}
+                {% set noRecordsMessage = menuList.noRecordsMessage %}
+                {% set detailsPage = menuList.detailsPage %}
+                {% set detailsKeyColumn = menuList.detailsKeyColumn %}
+                {% set detailsUrlParameter = menuList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+        
+            {# Use spaceless tag to remove spaces inside the A tag. #}
+            {% spaceless %}
+                
+                <a href="/catalog/#catalog-{{ record.slug }}" class="dropped-menu__item">
                         <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/protein.png'|theme }}" alt="">
+                            <img class="menu-item__img" src="{{ record.picture|media }}" alt="">
                         </div>
-                        <div class="menu-item__category-title">Протеин</div>
+                        <div class="menu-item__category-title">{{ record.category_title }}</div>
                     </a>
-                    <a href="/catalog/#catalog-superfoods" class="dropped-menu__item">
-                        <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/oliya_food.png'|theme }}" alt="">
-                        </div>
-                        <div class="menu-item__category-title">Суперфуд</div>
-                    </a>
-                    <a href="/catalog/#catalog-cosmetics" class="dropped-menu__item">
-                        <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/milo.png'|theme }}" alt="">
-                        </div>
-                        <div class="menu-item__category-title">Косметика</div>
-                    </a>
+                
+            {% endspaceless %}
+        
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}
+
                 </div>
             </div>
 
@@ -96,7 +115,7 @@
 
         </div>
     </header>
-</div>";s:5:"mtime";i:1597239595;s:6:"markup";s:6551:"<div id="App-header">
+</div>";s:5:"mtime";i:1597298480;s:6:"markup";s:6575:"<div id="App-header">
     <header class="main-header" id="main-header">
         <div class="main-header__items">
             <a href="/" class="main-header__item --menu-item">
@@ -109,24 +128,33 @@
 
             <div class="main-header__dropped-menu">
                 <div class="dropped-menu__items">
-                    <a href="/catalog/#catalog-proteins" class="dropped-menu__item">
+                
+                {% set records = menuList.records %}
+                {% set displayColumn = menuList.displayColumn %}
+                {% set noRecordsMessage = menuList.noRecordsMessage %}
+                {% set detailsPage = menuList.detailsPage %}
+                {% set detailsKeyColumn = menuList.detailsKeyColumn %}
+                {% set detailsUrlParameter = menuList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+        
+            {# Use spaceless tag to remove spaces inside the A tag. #}
+            {% spaceless %}
+                
+                <a href="/catalog/#catalog-{{ record.slug }}" class="dropped-menu__item">
                         <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/protein.png'|theme }}" alt="">
+                            <img class="menu-item__img" src="{{ record.picture|media }}" alt="">
                         </div>
-                        <div class="menu-item__category-title">Протеин</div>
+                        <div class="menu-item__category-title">{{ record.category_title }}</div>
                     </a>
-                    <a href="/catalog/#catalog-superfoods" class="dropped-menu__item">
-                        <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/oliya_food.png'|theme }}" alt="">
-                        </div>
-                        <div class="menu-item__category-title">Суперфуд</div>
-                    </a>
-                    <a href="/catalog/#catalog-cosmetics" class="dropped-menu__item">
-                        <div class="menu-item__img-holder">
-                            <img class="menu-item__img" src="{{ '/assets/products/milo.png'|theme }}" alt="">
-                        </div>
-                        <div class="menu-item__category-title">Косметика</div>
-                    </a>
+                
+            {% endspaceless %}
+        
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}
+
                 </div>
             </div>
 
@@ -194,4 +222,4 @@
 
         </div>
     </header>
-</div>";s:4:"code";N;}}
+</div>";s:4:"code";N;s:20:"builderList menuList";a:8:{s:10:"modelClass";s:32:"iamb\Productlist\Models\MenuList";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
