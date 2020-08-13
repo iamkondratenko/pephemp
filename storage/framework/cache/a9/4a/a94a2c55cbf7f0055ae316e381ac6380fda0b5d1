@@ -1,4 +1,4 @@
-1597305973a:1:{s:20:"products/catalog.htm";a:7:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:5379:"[builderList productList]
+1597317129a:1:{s:20:"products/catalog.htm";a:7:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:5379:"[builderList productList]
 modelClass = "iamb\Productlist\Models\ProductList"
 scope = "-"
 scopeValue = "{{ :scope }}"
