@@ -1,0 +1,10 @@
+columns:
+    id:
+        label: '#'
+        type: number
+    category_title:
+        label: category_title
+        type: text
+    slug:
+        label: slug
+        type: text

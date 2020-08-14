@@ -9,3 +9,12 @@ navigation:
         label: Товары
         url: iamb/productlist/productlist
         icon: icon-align-justify
+        sideMenu:
+            productList:
+                label: Товары
+                url: iamb/productlist/productlist
+                icon: icon-sitemap
+            categories:
+                label: Категории
+                url: iamb/productlist/categorylist
+                icon: icon-sitemap

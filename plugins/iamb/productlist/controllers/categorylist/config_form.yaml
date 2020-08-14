@@ -1,0 +1,10 @@
+name: CategoryList
+form: $/iamb/productlist/models/menulist/fields.yaml
+modelClass: iamb\Productlist\Models\MenuList
+defaultRedirect: iamb/productlist/categorylist
+create:
+    redirect: 'iamb/productlist/categorylist/update/:id'
+    redirectClose: iamb/productlist/categorylist
+update:
+    redirect: iamb/productlist/categorylist
+    redirectClose: iamb/productlist/categorylist
