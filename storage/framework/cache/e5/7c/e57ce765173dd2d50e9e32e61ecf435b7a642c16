@@ -1,4 +1,5 @@
-1597317130a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19753:"==
+1597365044a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19925:"
+==
 <div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
@@ -7,15 +8,32 @@
                     Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
                     Обіцяємо, це дуже буде дуже цiкаво
                 </p>
+                <form data-request="{{ genericForm }}::onFormSubmit">
 
-                <input type="text" class="subscribe-section__input" placeholder="Введи свiй email">
-                <button class="subscribe-section__subscribe-button">Пiдписатися</button>
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+
+
+    <input type="text" id="email" name="email" class="subscribe-section__input" placeholder="Введи свiй email">
+    <button type="submit" class="subscribe-section__subscribe-button">Пiдписатися</button>
+
+
+
+
+    </div>
+
+
+</form>
+                
+
+
             </div>
         </div>
         <footer class="main-footer">
             <div class="social-block">
                 <p class="social-block__title">
-                    Слiдкуй за нами в соцмережах
+                    Следите за новостями в соцсетях
                 </p>
                 <div class="social-block__icon-items">
                     <a href="#" class="social-block__icon-item">
@@ -119,9 +137,9 @@
 
                         </button>
                     </div>
-                    
-                    
-                    
+
+
+
                     <form class="ordering-form" action="/thankyoupage/"">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>
@@ -183,7 +201,8 @@
                 </div>
             </div>
         </div>
-    </div>";s:5:"mtime";i:1597239595;s:6:"markup";s:19750:"<div id="App-footer">
+    </div>
+";s:5:"mtime";i:1597358349;s:6:"markup";s:19919:"<div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
                 <h3 class="subscribe-section__title">Пiдписатися на новини</h3>
@@ -191,15 +210,32 @@
                     Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
                     Обіцяємо, це дуже буде дуже цiкаво
                 </p>
+                <form data-request="{{ genericForm }}::onFormSubmit">
 
-                <input type="text" class="subscribe-section__input" placeholder="Введи свiй email">
-                <button class="subscribe-section__subscribe-button">Пiдписатися</button>
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+
+
+    <input type="text" id="email" name="email" class="subscribe-section__input" placeholder="Введи свiй email">
+    <button type="submit" class="subscribe-section__subscribe-button">Пiдписатися</button>
+
+
+
+
+    </div>
+
+
+</form>
+                
+
+
             </div>
         </div>
         <footer class="main-footer">
             <div class="social-block">
                 <p class="social-block__title">
-                    Слiдкуй за нами в соцмережах
+                    Следите за новостями в соцсетях
                 </p>
                 <div class="social-block__icon-items">
                     <a href="#" class="social-block__icon-item">
@@ -303,9 +339,9 @@
 
                         </button>
                     </div>
-                    
-                    
-                    
+
+
+
                     <form class="ordering-form" action="/thankyoupage/"">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>

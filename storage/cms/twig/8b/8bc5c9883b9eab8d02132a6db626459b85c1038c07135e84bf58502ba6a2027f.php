@@ -63,38 +63,14 @@ class __TwigTemplate_9920919fca9d39d2da47b565629caad64180e807eb1a9ad0c57aa8c4b12
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 14
-        echo "    </head>
-    <body>
-
-        <!-- Header -->
-            ";
-        // line 18
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 19
-        echo "
-        <!-- Content -->
-            ";
-        // line 21
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 22
-        echo "
-        <!-- Footer -->
-            ";
-        // line 24
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 25
-        echo "
-        <!-- Scripts -->
-        <script src=\"";
-        // line 27
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
-        echo "\"></script>
+        echo "        <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" integrity=\"sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=\" crossorigin=\"anonymous\"></script>
         ";
-        // line 28
+        // line 15
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework'.($_minify ? '-min' : '').'.js"></script>'.PHP_EOL;
+        unset($_minify);
+        // line 16
+        echo "        ";
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -105,11 +81,54 @@ class __TwigTemplate_9920919fca9d39d2da47b565629caad64180e807eb1a9ad0c57aa8c4b12
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 29
+        // line 17
+        echo "    </head>
+    <body>
+
+        <!-- Header -->
+            ";
+        // line 21
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 22
+        echo "
+        <!-- Content -->
+            ";
+        // line 24
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 25
+        echo "
+        <!-- Footer -->
+            ";
+        // line 27
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 28
+        echo "
+        <!-- Scripts -->
+        <script src=\"";
+        // line 30
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
+        echo "\"></script>
+        ";
+        // line 31
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        if ($_minify) {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
+        }
+        else {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
+        }
+        echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
+        unset($_minify);
+        // line 32
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 30
+        // line 33
         echo "
     </body>
 </html>";
@@ -127,7 +146,7 @@ class __TwigTemplate_9920919fca9d39d2da47b565629caad64180e807eb1a9ad0c57aa8c4b12
 
     public function getDebugInfo()
     {
-        return array (  113 => 30,  109 => 29,  98 => 28,  94 => 27,  90 => 25,  86 => 24,  82 => 22,  80 => 21,  76 => 19,  72 => 18,  66 => 14,  63 => 13,  59 => 12,  52 => 8,  48 => 7,  44 => 6,  37 => 1,);
+        return array (  132 => 33,  128 => 32,  117 => 31,  113 => 30,  109 => 28,  105 => 27,  101 => 25,  99 => 24,  95 => 22,  91 => 21,  85 => 17,  73 => 16,  69 => 15,  66 => 14,  63 => 13,  59 => 12,  52 => 8,  48 => 7,  44 => 6,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -145,6 +164,9 @@ class __TwigTemplate_9920919fca9d39d2da47b565629caad64180e807eb1a9ad0c57aa8c4b12
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link href=\"{{ 'assets/css/style.css?3'|theme }}\" rel=\"stylesheet\">
         {% styles %}
+        <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" integrity=\"sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=\" crossorigin=\"anonymous\"></script>
+        {% framework %}
+        {% framework extras %}
     </head>
     <body>
 

@@ -42,15 +42,41 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                     Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
                     Обіцяємо, це дуже буде дуже цiкаво
                 </p>
+                <form data-request=\"";
+        // line 9
+        echo twig_escape_filter($this->env, ($context["genericForm"] ?? null), "html", null, true);
+        echo "::onFormSubmit\">
 
-                <input type=\"text\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
-                <button class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+    ";
+        // line 11
+        echo call_user_func_array($this->env->getFunction('form_token')->getCallable(), ["token"]);
+        echo "
+
+    <div id=\"";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["genericForm"] ?? null), "html", null, true);
+        echo "_forms_flash\"></div>
+
+
+    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
+    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+
+
+
+
+    </div>
+
+
+</form>
+                
+
+
             </div>
         </div>
         <footer class=\"main-footer\">
             <div class=\"social-block\">
                 <p class=\"social-block__title\">
-                    Слiдкуй за нами в соцмережах
+                    Следите за новостями в соцсетях
                 </p>
                 <div class=\"social-block__icon-items\">
                     <a href=\"#\" class=\"social-block__icon-item\">
@@ -154,9 +180,9 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
                         </button>
                     </div>
-                    
-                    
-                    
+
+
+
                     <form class=\"ordering-form\" action=\"/thankyoupage/\"\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
@@ -226,9 +252,14 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
         return "/Users/alexkondratenko/git/pep-hemp/themes/demo/partials/site/footer.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  37 => 1,);
+        return array (  57 => 13,  52 => 11,  47 => 9,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -241,15 +272,32 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                     Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
                     Обіцяємо, це дуже буде дуже цiкаво
                 </p>
+                <form data-request=\"{{ genericForm }}::onFormSubmit\">
 
-                <input type=\"text\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
-                <button class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+    {{ form_token() }}
+
+    <div id=\"{{ genericForm }}_forms_flash\"></div>
+
+
+    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
+    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+
+
+
+
+    </div>
+
+
+</form>
+                
+
+
             </div>
         </div>
         <footer class=\"main-footer\">
             <div class=\"social-block\">
                 <p class=\"social-block__title\">
-                    Слiдкуй за нами в соцмережах
+                    Следите за новостями в соцсетях
                 </p>
                 <div class=\"social-block__icon-items\">
                     <a href=\"#\" class=\"social-block__icon-item\">
@@ -353,9 +401,9 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
                         </button>
                     </div>
-                    
-                    
-                    
+
+
+
                     <form class=\"ordering-form\" action=\"/thankyoupage/\"\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>

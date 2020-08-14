@@ -1,4 +1,4 @@
-1597317129a:1:{s:20:"products/catalog.htm";a:7:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:5379:"[builderList productList]
+1597365044a:1:{s:20:"products/catalog.htm";a:7:{s:8:"fileName";s:20:"products/catalog.htm";s:7:"content";s:5237:"[builderList productList]
 modelClass = "iamb\Productlist\Models\ProductList"
 scope = "-"
 scopeValue = "{{ :scope }}"
@@ -19,6 +19,7 @@ detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
+
 <div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
                 <h2 class="catalog__title">Каталог</h2>
@@ -30,7 +31,7 @@ pageNumber = "{{ :page }}"
                     <div class="catalog-homepage__filter__title">категории:</div>
                     <div class="catalog-homepage__filter-items">
                         <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
-                        
+
                         {% set records = categoryList.records %}
                         {% set displayColumn = categoryList.displayColumn %}
                         {% set noRecordsMessage = categoryList.noRecordsMessage %}
@@ -38,24 +39,24 @@ pageNumber = "{{ :page }}"
                         {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
                         {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
 
-                        
+
                             {% for record in records %}
-                                
+
                                     {# Use spaceless tag to remove spaces inside the A tag. #}
                                     {% spaceless %}
                                         <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
                                     {% endspaceless %}
-                                
+
                             {% else %}
                                 <li class="no-data">{{ noRecordsMessage }}</li>
                             {% endfor %}
- 
+
                     </div>
                 </aside>
 
 
                 <div class="catalog__products">
-                
+
 
 
                     {% set records = productList.records %}
@@ -64,8 +65,9 @@ pageNumber = "{{ :page }}"
                     {% set detailsPage = productList.detailsPage %}
                     {% set detailsKeyColumn = productList.detailsKeyColumn %}
                     {% set detailsUrlParameter = productList.detailsUrlParameter %}
-                
+
                     <div class="catalog__product-items">
+
 
                         {% for record in records %}
                             <div class="catalog__product-item" data-category="{{ record.category }}" data-productid="{{ record.id }}">
@@ -100,7 +102,7 @@ pageNumber = "{{ :page }}"
                             <li class="no-data">{{ noRecordsMessage }}</li>
                         {% endfor %}
 
-                        
+
 
     </div>
                     </div>
@@ -110,7 +112,8 @@ pageNumber = "{{ :page }}"
 
 
             </div>
-        </div>";s:5:"mtime";i:1597301590;s:6:"markup";s:4848:"<div class="catalog --container ancore" id="catalog-ancore">
+        </div>
+";s:5:"mtime";i:1597350847;s:6:"markup";s:4681:"<div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
                 <h2 class="catalog__title">Каталог</h2>
                 <a href="#" class="catalog__header-price">Получить прайс</a>
@@ -121,7 +124,7 @@ pageNumber = "{{ :page }}"
                     <div class="catalog-homepage__filter__title">категории:</div>
                     <div class="catalog-homepage__filter-items">
                         <a href="#catalog-all" class="catalog-homepage__filter-item --filter-item-active" data-category="all">Всi</a>
-                        
+
                         {% set records = categoryList.records %}
                         {% set displayColumn = categoryList.displayColumn %}
                         {% set noRecordsMessage = categoryList.noRecordsMessage %}
@@ -129,24 +132,24 @@ pageNumber = "{{ :page }}"
                         {% set detailsKeyColumn = categoryList.detailsKeyColumn %}
                         {% set detailsUrlParameter = categoryList.detailsUrlParameter %}
 
-                        
+
                             {% for record in records %}
-                                
+
                                     {# Use spaceless tag to remove spaces inside the A tag. #}
                                     {% spaceless %}
                                         <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
                                     {% endspaceless %}
-                                
+
                             {% else %}
                                 <li class="no-data">{{ noRecordsMessage }}</li>
                             {% endfor %}
- 
+
                     </div>
                 </aside>
 
 
                 <div class="catalog__products">
-                
+
 
 
                     {% set records = productList.records %}
@@ -155,8 +158,9 @@ pageNumber = "{{ :page }}"
                     {% set detailsPage = productList.detailsPage %}
                     {% set detailsKeyColumn = productList.detailsKeyColumn %}
                     {% set detailsUrlParameter = productList.detailsUrlParameter %}
-                
+
                     <div class="catalog__product-items">
+
 
                         {% for record in records %}
                             <div class="catalog__product-item" data-category="{{ record.category }}" data-productid="{{ record.id }}">
@@ -191,7 +195,7 @@ pageNumber = "{{ :page }}"
                             <li class="no-data">{{ noRecordsMessage }}</li>
                         {% endfor %}
 
-                        
+
 
     </div>
                     </div>
