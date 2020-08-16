@@ -67,7 +67,7 @@ function scrollingHeader(scroled) {
     } else {
         headerNode.classList.remove('--isScroled')
     }
-    
+
 }
 
 
@@ -619,9 +619,82 @@ function gettingDepByCity(pattern) {
 
 
 
+
+
+
     })();
 
 
 }
 
 
+function ordering() {
+
+  let first_name = document.querySelector("input[name=first_name]").value;
+  let last_name = document.querySelector("input[name=last_name]").value;
+  let email = document.querySelector("input[name=order_email]").value;
+  let phone = document.querySelector("input[name=phone]").value;
+  let city = document.querySelector("input[name=city]").value;
+  let department = document.querySelector("input[name=department]").value;
+
+
+  let cartArray = []
+  console.log(cartArray);
+
+  var cart = Object.values(JSON.parse(localStorage.getItem('cart')));
+
+
+  cart.forEach((item, i) => {
+    let orderingBaket = {
+        "product_name": item.productTitle,
+        "product_id": item.id,
+    		"quantity": item.quantity
+      }
+      cartArray.push(orderingBaket)
+  });
+
+  console.log(cartArray);
+
+
+  // function getOrderBasket() {
+  //   cart.forEach(cart => {
+  //     let orderingBaket = {
+  //       "product_name": cart.productTitle,
+  //       "product_id": 1,
+  // 			"quantity": 1
+  //     }
+  //     cartArray.push(orderingBaket)
+  //   }
+  // }
+
+
+
+  var data = JSON.stringify({
+  "first_name": first_name,
+  "last_name": last_name,
+  "email": email,
+  "phone": phone,
+  "city": city,
+  "type_of_delivery": "NOVA_POSHTA",
+  "pickpoint": department,
+  "basket": cartArray
+});
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    // console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "http://localhost/api/order/");
+xhr.setRequestHeader("content-type", "application/json");
+
+xhr.send(data);
+
+
+
+
+}

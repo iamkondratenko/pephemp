@@ -1,0 +1,61 @@
+fields:
+    id:
+        label: 'Номер заказа'
+        span: left
+        type: number
+    section1:
+        label: 'Контактные данные'
+        span: full
+        type: section
+    first_name:
+        label: Имя
+        span: left
+        type: text
+    last_name:
+        label: Фамилия
+        span: auto
+        type: text
+    phone:
+        label: Телефон
+        span: auto
+        type: text
+    email:
+        label: Емеил
+        span: auto
+        type: text
+    section2:
+        label: 'Данные по доставке'
+        span: full
+        type: section
+    city:
+        label: Город
+        span: auto
+        type: text
+    type_of_delivery:
+        label: 'Тип доставки'
+        span: left
+        type: text
+    pickpoint:
+        label: 'Номер отделения'
+        span: auto
+        type: text
+    order_basket:
+        label: Заказ
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                product_name:
+                    label: 'Название товара'
+                    span: auto
+                    readOnly: 1
+                    type: text
+                quantity:
+                    label: Количество
+                    span: auto
+                    type: number
+    total_price:
+        label: 'Стоимость заказа'
+        span: auto
+        type: number

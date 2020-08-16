@@ -134,4 +134,9 @@
   'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\iambProductlistModelsMenuListController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/iambProductlistModelsMenuListController.php',
   'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\MartinFormsModelsRecordController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/MartinFormsModelsRecordController.php',
   'iamb\\productlist\\models\\ProductList' => 'plugins/iamb/productlist/models/ProductList.php',
+  'iamb\\orders\\Plugin' => 'plugins/iamb/orders/Plugin.php',
+  'iamb\\orders\\Controllers\\orders' => 'plugins/iamb/orders/controllers/orders.php',
+  'iamb\\Orders\\Models\\Orders' => 'plugins/iamb/orders/models/Orders.php',
+  'iamb\\orders\\models\\Orders' => 'plugins/iamb/orders/models/Orders.php',
+  'RainLab\\Builder\\Classes\\LanguageMixer' => 'plugins/rainlab/builder/classes/LanguageMixer.php',
 );

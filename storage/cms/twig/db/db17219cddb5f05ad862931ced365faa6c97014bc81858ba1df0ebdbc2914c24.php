@@ -68,7 +68,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
 
 </form>
-                
+
 
 
             </div>
@@ -183,7 +183,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
 
 
-                    <form class=\"ordering-form\" action=\"/thankyoupage/\"\">
+                    <form class=\"ordering-form\" action=\"/thankyoupage\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
@@ -197,7 +197,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                                 </div>
                                 <div class=\"form-field email\">
                                     <div class=\"label-field__ordering-form\">Введiть email:</div>
-                                    <input class=\"ordering-field\" type=\"email\">
+                                    <input class=\"ordering-field\" type=\"email\" name=\"order_email\">
                                 </div>
                                 <div class=\"form-field phone\">
                                     <div class=\"label-field__ordering-form\">Введiть телефон:</div>
@@ -238,7 +238,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                         </div>
                         <div class=\"modals__order__section__footer\">
                             <h3 class=\"modals__cart__section__title\">Всього:&nbsp;<div class=\"order_total_count\"></div></h3>
-                            <button class=\"order-button\" onclick=\"openOrdering()\">Оформити замовлення</button>
+                            <button class=\"order-button\" onclick=\"ordering()\">Оформити замовлення</button>
                         </div>
                     </form>
                 </div>
@@ -289,7 +289,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
 
 </form>
-                
+
 
 
             </div>
@@ -404,7 +404,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
 
 
 
-                    <form class=\"ordering-form\" action=\"/thankyoupage/\"\">
+                    <form class=\"ordering-form\" action=\"/thankyoupage\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
@@ -418,7 +418,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                                 </div>
                                 <div class=\"form-field email\">
                                     <div class=\"label-field__ordering-form\">Введiть email:</div>
-                                    <input class=\"ordering-field\" type=\"email\">
+                                    <input class=\"ordering-field\" type=\"email\" name=\"order_email\">
                                 </div>
                                 <div class=\"form-field phone\">
                                     <div class=\"label-field__ordering-form\">Введiть телефон:</div>
@@ -459,7 +459,7 @@ class __TwigTemplate_54bb5cad6aca9846034ac36a30a2902bf0b0a9257f29f3676f830e9f5a4
                         </div>
                         <div class=\"modals__order__section__footer\">
                             <h3 class=\"modals__cart__section__title\">Всього:&nbsp;<div class=\"order_total_count\"></div></h3>
-                            <button class=\"order-button\" onclick=\"openOrdering()\">Оформити замовлення</button>
+                            <button class=\"order-button\" onclick=\"ordering()\">Оформити замовлення</button>
                         </div>
                     </form>
                 </div>

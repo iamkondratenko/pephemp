@@ -1,0 +1,10 @@
+1597610984a:1:{s:16:"thankyoupage.htm";a:8:{s:8:"fileName";s:16:"thankyoupage.htm";s:7:"content";s:118:"title = "Demonstration"
+url = "/thankyoupage"
+layout = "default"
+==
+<div id="App">
+{% partial 'site/banner' %}
+</div>
+";s:5:"mtime";i:1597609141;s:6:"markup";s:49:"<div id="App">
+{% partial 'site/banner' %}
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:13:"/thankyoupage";s:6:"layout";s:7:"default";}}

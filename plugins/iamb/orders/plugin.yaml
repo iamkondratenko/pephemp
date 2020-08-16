@@ -1,0 +1,11 @@
+plugin:
+    name: 'iamb.orders::lang.plugin.name'
+    description: 'iamb.orders::lang.plugin.description'
+    author: 'Alex Kondratenko'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Заказы
+        url: iamb/orders/orders
+        icon: icon-life-ring

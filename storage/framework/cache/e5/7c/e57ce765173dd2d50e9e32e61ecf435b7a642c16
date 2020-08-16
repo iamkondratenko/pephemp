@@ -1,4 +1,4 @@
-1597492887a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19925:"
+1597610950a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:19922:"
 ==
 <div id="App-footer">
         <div class="subscribe-section">
@@ -25,7 +25,7 @@
 
 
 </form>
-                
+
 
 
             </div>
@@ -140,7 +140,7 @@
 
 
 
-                    <form class="ordering-form" action="/thankyoupage/"">
+                    <form class="ordering-form" action="/thankyoupage">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>
                             <div class="field-set">
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="form-field email">
                                     <div class="label-field__ordering-form">Введiть email:</div>
-                                    <input class="ordering-field" type="email">
+                                    <input class="ordering-field" type="email" name="order_email">
                                 </div>
                                 <div class="form-field phone">
                                     <div class="label-field__ordering-form">Введiть телефон:</div>
@@ -195,14 +195,14 @@
                         </div>
                         <div class="modals__order__section__footer">
                             <h3 class="modals__cart__section__title">Всього:&nbsp;<div class="order_total_count"></div></h3>
-                            <button class="order-button" onclick="openOrdering()">Оформити замовлення</button>
+                            <button class="order-button" onclick="ordering()">Оформити замовлення</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-";s:5:"mtime";i:1597367280;s:6:"markup";s:19919:"<div id="App-footer">
+";s:5:"mtime";i:1597609133;s:6:"markup";s:19916:"<div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
                 <h3 class="subscribe-section__title">Пiдписатися на новини</h3>
@@ -227,7 +227,7 @@
 
 
 </form>
-                
+
 
 
             </div>
@@ -342,7 +342,7 @@
 
 
 
-                    <form class="ordering-form" action="/thankyoupage/"">
+                    <form class="ordering-form" action="/thankyoupage">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>
                             <div class="field-set">
@@ -356,7 +356,7 @@
                                 </div>
                                 <div class="form-field email">
                                     <div class="label-field__ordering-form">Введiть email:</div>
-                                    <input class="ordering-field" type="email">
+                                    <input class="ordering-field" type="email" name="order_email">
                                 </div>
                                 <div class="form-field phone">
                                     <div class="label-field__ordering-form">Введiть телефон:</div>
@@ -397,7 +397,7 @@
                         </div>
                         <div class="modals__order__section__footer">
                             <h3 class="modals__cart__section__title">Всього:&nbsp;<div class="order_total_count"></div></h3>
-                            <button class="order-button" onclick="openOrdering()">Оформити замовлення</button>
+                            <button class="order-button" onclick="ordering()">Оформити замовлення</button>
                         </div>
                     </form>
                 </div>

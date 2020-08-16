@@ -1,7 +1,9 @@
 <?php
 
   use Illuminate\Http\Request;
+  use Illuminate\Http\Response;
   use iamb\productlist\models\ProductList;
+  use iamb\orders\models\Orders;
 
   Route::match(['get', 'post'], '/api/order/', function(Request $request){
 
@@ -10,6 +12,7 @@
     $res = json_decode($content);
 
     $products = ProductList::all();
+    $orders = Orders::all();
 
     $recivedBasketItem = $res->basket;
 
@@ -17,7 +20,7 @@
 
     foreach ($products as $key => $productItem) {
       foreach ($recivedBasketItem as $key => $basketItems) {
-        $productId = $basketItems->id;
+        $productId = $basketItems->product_id;
         $productQuantity = $basketItems->quantity;
 
         if ($productItem->id == $productId) {
@@ -26,15 +29,31 @@
       }
     }
 
+    Orders::insert(array(
+      'first_name' => $res->first_name,
+      'last_name' => $res->last_name,
+      'email' => $res->email,
+      'phone'   => $res->phone,
+      'city'   => $res->city,
+      'type_of_delivery'   => $res->type_of_delivery,
+      'pickpoint'    => $res->pickpoint,
+      'order_basket'   => json_encode($recivedBasketItem),
+      'total_price'   => $total,
+    ));
+
 
   class OrderResult {
-    var $totalOrder;
+    var $totalForPay;
   }
 
   $object = new OrderResult;
-  $object->totalOrder = $total;
+  $object->totalForPay = $total;
 
-  return json_encode($object);
+
+
+  return response($orders)
+        ->header( 'Access-Control-Allow-Origin', '*' );
+  ;
 
 
   });

@@ -1,0 +1,37 @@
+columns:
+    id:
+        label: id
+        type: number
+    first_name:
+        label: first_name
+        type: text
+    last_name:
+        label: last_name
+        type: text
+    email:
+        label: email
+        type: text
+    phone:
+        label: phone
+        type: text
+    city:
+        label: city
+        type: text
+    type_of_delivery:
+        label: type_of_delivery
+        type: text
+    pickpoint:
+        label: pickpoint
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    deleted_at:
+        label: deleted_at
+        type: datetime
+    basket_id:
+        label: basket_id
+        type: number

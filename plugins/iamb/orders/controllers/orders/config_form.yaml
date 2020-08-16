@@ -1,0 +1,10 @@
+name: Orders
+form: $/iamb/orders/models/orders/fields.yaml
+modelClass: iamb\Orders\Models\Orders
+defaultRedirect: iamb/orders/orders
+create:
+    redirect: 'iamb/orders/orders/update/:id'
+    redirectClose: iamb/orders/orders
+update:
+    redirect: iamb/orders/orders
+    redirectClose: iamb/orders/orders
