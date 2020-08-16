@@ -132,4 +132,6 @@
   'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\iambBlogModelsBlogController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/iambBlogModelsBlogController.php',
   'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\iambProductlistModelsProductListController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/iambProductlistModelsProductListController.php',
   'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\iambProductlistModelsMenuListController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/iambProductlistModelsMenuListController.php',
+  'IPriceGroup\\OcApiPlugin\\Controllers\\Api\\MartinFormsModelsRecordController' => 'plugins/ipricegroup/ocapiplugin/controllers/api/MartinFormsModelsRecordController.php',
+  'iamb\\productlist\\models\\ProductList' => 'plugins/iamb/productlist/models/ProductList.php',
 );
