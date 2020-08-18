@@ -137,7 +137,10 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         </footer>
 
         <div class=\"modals\">
+        <div class=\"modals__cart__close-button\" onclick=\"openCartDrawer()\"></div>
             <div class=\"modals__cart\">
+
+
                 <div class=\"modals__cart__section\">
                     <div class=\"modals__cart__section__header\">
                         <h3 class=\"modals__cart__section__title\">Кошик</h3>
@@ -358,7 +361,10 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         </footer>
 
         <div class=\"modals\">
+        <div class=\"modals__cart__close-button\" onclick=\"openCartDrawer()\"></div>
             <div class=\"modals__cart\">
+
+
                 <div class=\"modals__cart__section\">
                     <div class=\"modals__cart__section__header\">
                         <h3 class=\"modals__cart__section__title\">Кошик</h3>

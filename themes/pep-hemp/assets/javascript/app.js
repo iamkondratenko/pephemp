@@ -289,9 +289,18 @@ function openCartDrawer() {
     document.body.classList.toggle('--cartDrawerIsOpen')
     let cartModal = document.querySelector('.modals__cart')
     let cartDrawer = document.querySelector('.modals__cart__section')
+    let closeButton = document.querySelector('.modals__cart__close-button')
     cartModal.classList.toggle('modals__cart__is-showing')
     cartModal.classList.remove('orderDrawer-isShowing')
     cartDrawer.classList.toggle('--cart__drawer__is-showing')
+
+    if (cartModal.classList.contains('modals__cart__is-showing')) {
+      closeButton.style.display = 'block'
+    } else {
+      closeButton.style.display = 'none'
+    }
+
+
 }
 
 function closingCartDrawer() {

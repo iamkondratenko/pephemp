@@ -63,7 +63,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
         // line 11
         if (($context["record"] ?? null)) {
             // line 12
-            echo "   
+            echo "
        <div class=\"product-section\" data-productid=\"";
             // line 13
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "id", [], "any", false, false, false, 13), "html", null, true);
@@ -71,7 +71,10 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 
         <div class=\"product-section__text-block\">
             <div class=\"product-section__text-block-holder\">
-                <div class=\"text-block__breadcrumbs\">Головна / Каталог / Протеин</div>
+                <div class=\"text-block__breadcrumbs\"><a href=\"/\">Головна</a> / <a href=\"/catalog\">Каталог</a> / ";
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "title", [], "any", false, false, false, 17), "html", null, true);
+            echo "</div>
                 <div class=\"text-block__title-section\">
                     <h1 class=\"title-section__title\">";
             // line 19
@@ -185,7 +188,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
             // line 95
             if (twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "second_additional_pic", [], "any", false, false, false, 95)) {
                 // line 96
-                echo "    <div class=\"section-adv --odd\">  
+                echo "    <div class=\"section-adv --odd\">
         <div class=\"section-adv__container\">
             <div class=\"section-adv__container__content\">
                 <div class=\"section-adv__container__text-block-left\">
@@ -232,7 +235,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
                 </svg>
             </a>
         </div>
-    </div> 
+    </div>
     ";
             }
             // line 136
@@ -272,13 +275,13 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
         ";
             }
             // line 158
-            echo "    
+            echo "
 
     </div>
-    
-        
-    
-   
+
+
+
+
 ";
         } else {
             // line 166
@@ -305,7 +308,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 
     public function getDebugInfo()
     {
-        return array (  291 => 168,  285 => 166,  275 => 158,  264 => 150,  257 => 146,  251 => 143,  244 => 138,  242 => 137,  239 => 136,  207 => 107,  200 => 103,  194 => 100,  188 => 96,  186 => 95,  183 => 94,  148 => 62,  142 => 59,  136 => 56,  129 => 51,  127 => 50,  117 => 43,  106 => 35,  95 => 27,  90 => 25,  83 => 21,  78 => 19,  69 => 13,  66 => 12,  64 => 11,  61 => 10,  59 => 9,  57 => 8,  55 => 7,  52 => 6,  50 => 3,  43 => 4,  41 => 3,  37 => 1,);
+        return array (  294 => 168,  288 => 166,  278 => 158,  267 => 150,  260 => 146,  254 => 143,  247 => 138,  245 => 137,  242 => 136,  210 => 107,  203 => 103,  197 => 100,  191 => 96,  189 => 95,  186 => 94,  151 => 62,  145 => 59,  139 => 56,  132 => 51,  130 => 50,  120 => 43,  109 => 35,  98 => 27,  93 => 25,  86 => 21,  81 => 19,  76 => 17,  69 => 13,  66 => 12,  64 => 11,  61 => 10,  59 => 9,  57 => 8,  55 => 7,  52 => 6,  50 => 3,  43 => 4,  41 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -321,12 +324,12 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 {% set notFoundMessage = productDetails.notFoundMessage %}
 
 {% if record %}
-   
+
        <div class=\"product-section\" data-productid=\"{{ record.id }}\">
 
         <div class=\"product-section__text-block\">
             <div class=\"product-section__text-block-holder\">
-                <div class=\"text-block__breadcrumbs\">Головна / Каталог / Протеин</div>
+                <div class=\"text-block__breadcrumbs\"><a href=\"/\">Головна</a> / <a href=\"/catalog\">Каталог</a> / {{ record.title }}</div>
                 <div class=\"text-block__title-section\">
                     <h1 class=\"title-section__title\">{{ record.title }}</h1>
                     <p class=\"title-section__description\">
@@ -405,7 +408,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
     {% endif %}
 
     {% if record.second_additional_pic %}
-    <div class=\"section-adv --odd\">  
+    <div class=\"section-adv --odd\">
         <div class=\"section-adv__container\">
             <div class=\"section-adv__container__content\">
                 <div class=\"section-adv__container__text-block-left\">
@@ -443,7 +446,7 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
                 </svg>
             </a>
         </div>
-    </div> 
+    </div>
     {% endif %}
 
     {% if record.third_additional_pic %}
@@ -467,13 +470,13 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 
         </div>
         {% endif %}
-    
+
 
     </div>
-    
-        
-    
-   
+
+
+
+
 {% else %}
     {{ notFoundMessage }}
 {% endif %}

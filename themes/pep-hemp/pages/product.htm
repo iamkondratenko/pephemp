@@ -9,6 +9,12 @@ identifierValue = "{{ :slug }}"
 modelKeyColumn = "slug"
 displayColumn = "slug"
 notFoundMessage = "Record not found"
+
+[builderDetails categoryList]
+modelClass = "iamb\Productlist\Models\MenuList"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Record not found"
 ==
 <div id="App">
 
@@ -21,12 +27,12 @@ notFoundMessage = "Record not found"
 {% set notFoundMessage = productDetails.notFoundMessage %}
 
 {% if record %}
-   
+
        <div class="product-section" data-productid="{{ record.id }}">
 
         <div class="product-section__text-block">
             <div class="product-section__text-block-holder">
-                <div class="text-block__breadcrumbs">Головна / Каталог / Протеин</div>
+                <div class="text-block__breadcrumbs"><a href="/">Головна</a> / <a href="/catalog">Каталог</a> / {{ record.title }}</div>
                 <div class="text-block__title-section">
                     <h1 class="title-section__title">{{ record.title }}</h1>
                     <p class="title-section__description">
@@ -105,7 +111,7 @@ notFoundMessage = "Record not found"
     {% endif %}
 
     {% if record.second_additional_pic %}
-    <div class="section-adv --odd">  
+    <div class="section-adv --odd">
         <div class="section-adv__container">
             <div class="section-adv__container__content">
                 <div class="section-adv__container__text-block-left">
@@ -143,7 +149,7 @@ notFoundMessage = "Record not found"
                 </svg>
             </a>
         </div>
-    </div> 
+    </div>
     {% endif %}
 
     {% if record.third_additional_pic %}
@@ -167,13 +173,13 @@ notFoundMessage = "Record not found"
 
         </div>
         {% endif %}
-    
+
 
     </div>
-    
-        
-    
-   
+
+
+
+
 {% else %}
     {{ notFoundMessage }}
 {% endif %}

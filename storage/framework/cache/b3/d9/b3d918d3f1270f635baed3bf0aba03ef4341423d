@@ -1,4 +1,4 @@
-1597726382a:1:{s:15:"site/static.htm";a:6:{s:8:"fileName";s:15:"site/static.htm";s:7:"content";s:1018:"[builderDetails itemPost]
+1597784080a:1:{s:15:"site/static.htm";a:6:{s:8:"fileName";s:15:"site/static.htm";s:7:"content";s:1018:"[builderDetails itemPost]
 modelClass = "iamb\StaticPage\Models\StaticPage"
 identifierValue = "{{ :slug }}"
 modelKeyColumn = "slug"
@@ -38,7 +38,7 @@ notFoundMessage = "Record not found"
 
     
 
-</div>";s:5:"mtime";i:1597693921;s:6:"markup";s:817:"<div id="App">
+</div>";s:5:"mtime";i:1597767893;s:6:"markup";s:817:"<div id="App">
 
 {% put title %}
     {% default %} {{ record.title }}
