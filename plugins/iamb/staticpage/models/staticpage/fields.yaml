@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: Заголовок
+        span: auto
+        type: text
+    slug:
+        label: Ссылка
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    picture:
+        label: Картинка
+        mode: file
+        span: full
+        type: mediafinder
+    text:
+        label: Текст
+        size: giant
+        span: full
+        type: richeditor

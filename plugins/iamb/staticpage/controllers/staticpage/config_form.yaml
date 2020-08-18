@@ -1,0 +1,10 @@
+name: StaticPage
+form: $/iamb/staticpage/models/staticpage/fields.yaml
+modelClass: iamb\StaticPage\Models\StaticPage
+defaultRedirect: iamb/staticpage/staticpage
+create:
+    redirect: 'iamb/staticpage/staticpage/update/:id'
+    redirectClose: iamb/staticpage/staticpage
+update:
+    redirect: iamb/staticpage/staticpage
+    redirectClose: iamb/staticpage/staticpage

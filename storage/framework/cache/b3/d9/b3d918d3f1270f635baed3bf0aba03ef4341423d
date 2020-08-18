@@ -1,0 +1,74 @@
+1597726382a:1:{s:15:"site/static.htm";a:6:{s:8:"fileName";s:15:"site/static.htm";s:7:"content";s:1018:"[builderDetails itemPost]
+modelClass = "iamb\StaticPage\Models\StaticPage"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Record not found"
+==
+<div id="App">
+
+{% put title %}
+    {% default %} {{ record.title }}
+{% endput %}
+
+    {% set record = itemPost.record %}
+    {% set displayColumn = itemPost.displayColumn %}
+    {% set notFoundMessage = itemPost.notFoundMessage %}
+    
+    {% if record %}
+        
+        <div class="blog  --container">
+        <div class="blog-item__header">
+            <h1 class="blog__title">{{ record.title }}</h1>
+        </div>
+        <div class="blog__item__img-holder">
+           <img class="blog__item__img" src="{{ record.picture|media }}" alt="">
+        </div>
+        <div class="blog__item-content">
+            <p>
+                {{ record.text|raw }}
+            </p>
+        </div>
+
+    </div>
+        
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+
+    
+
+</div>";s:5:"mtime";i:1597693921;s:6:"markup";s:817:"<div id="App">
+
+{% put title %}
+    {% default %} {{ record.title }}
+{% endput %}
+
+    {% set record = itemPost.record %}
+    {% set displayColumn = itemPost.displayColumn %}
+    {% set notFoundMessage = itemPost.notFoundMessage %}
+    
+    {% if record %}
+        
+        <div class="blog  --container">
+        <div class="blog-item__header">
+            <h1 class="blog__title">{{ record.title }}</h1>
+        </div>
+        <div class="blog__item__img-holder">
+           <img class="blog__item__img" src="{{ record.picture|media }}" alt="">
+        </div>
+        <div class="blog__item-content">
+            <p>
+                {{ record.text|raw }}
+            </p>
+        </div>
+
+    </div>
+        
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+
+    
+
+</div>";s:4:"code";N;s:23:"builderDetails itemPost";a:5:{s:10:"modelClass";s:33:"iamb\StaticPage\Models\StaticPage";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"slug";s:15:"notFoundMessage";s:16:"Record not found";}}}

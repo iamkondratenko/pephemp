@@ -1,0 +1,20 @@
+plugin:
+    name: 'iamb.staticpage::lang.plugin.name'
+    description: 'iamb.staticpage::lang.plugin.description'
+    author: 'Alex Kondratenko'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Другие страницы'
+        url: iamb/staticpage/staticpage
+        icon: icon-th-large
+        sideMenu:
+            side-menu-item:
+                label: 'О нас'
+                url: iamb/staticpage/staticpage
+                icon: icon-stop
+            side-menu-item2:
+                label: Контакты
+                url: /
+                icon: icon-stop

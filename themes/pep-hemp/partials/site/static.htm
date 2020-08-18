@@ -1,0 +1,41 @@
+[builderDetails itemPost]
+modelClass = "iamb\StaticPage\Models\StaticPage"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Record not found"
+==
+<div id="App">
+
+{% put title %}
+    {% default %} {{ record.title }}
+{% endput %}
+
+    {% set record = itemPost.record %}
+    {% set displayColumn = itemPost.displayColumn %}
+    {% set notFoundMessage = itemPost.notFoundMessage %}
+    
+    {% if record %}
+        
+        <div class="blog  --container">
+        <div class="blog-item__header">
+            <h1 class="blog__title">{{ record.title }}</h1>
+        </div>
+        <div class="blog__item__img-holder">
+           <img class="blog__item__img" src="{{ record.picture|media }}" alt="">
+        </div>
+        <div class="blog__item-content">
+            <p>
+                {{ record.text|raw }}
+            </p>
+        </div>
+
+    </div>
+        
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+
+    
+
+</div>

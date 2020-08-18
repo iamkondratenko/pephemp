@@ -139,4 +139,10 @@
   'iamb\\Orders\\Models\\Orders' => 'plugins/iamb/orders/models/Orders.php',
   'iamb\\orders\\models\\Orders' => 'plugins/iamb/orders/models/Orders.php',
   'RainLab\\Builder\\Classes\\LanguageMixer' => 'plugins/rainlab/builder/classes/LanguageMixer.php',
+  'backend\\Controllers\\preferences' => 'modules/backend/controllers/preferences.php',
+  'system\\Controllers\\mailpartials' => 'modules/system/controllers/mailpartials.php',
+  'cms\\Controllers\\themes' => 'modules/cms/controllers/themes.php',
+  'iamb\\staticpage\\Plugin' => 'plugins/iamb/staticpage/Plugin.php',
+  'iamb\\staticpage\\Controllers\\staticpage' => 'plugins/iamb/staticpage/controllers/staticpage.php',
+  'iamb\\StaticPage\\Models\\StaticPage' => 'plugins/iamb/staticpage/models/StaticPage.php',
 );

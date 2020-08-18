@@ -55,7 +55,3 @@ fields:
                     label: Количество
                     span: auto
                     type: number
-    total_price:
-        label: 'Стоимость заказа'
-        span: auto
-        type: number

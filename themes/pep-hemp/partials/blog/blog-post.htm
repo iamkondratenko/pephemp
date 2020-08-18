@@ -1,0 +1,43 @@
+[builderDetails blogPost]
+modelClass = "iamb\Blog\Models\Blog"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Record not found"
+==
+<div id="App">
+
+{% put title %}
+    {% default %} {{ record.title }}
+{% endput %}
+
+    {% set record = blogPost.record %}
+    {% set displayColumn = blogPost.displayColumn %}
+    {% set notFoundMessage = blogPost.notFoundMessage %}
+    
+    {% if record %}
+        
+        <div class="blog  --container">
+        <div class="blog-item__header">
+            <h1 class="blog__title">{{ record.title }}</h1>
+        </div>
+        <div class="blog__item__img-holder">
+           <img class="blog__item__img" src="{{ record.picture|media }}" alt="">
+        </div>
+        <div class="blog__item-content">
+            <p>
+                {{ record.text|md }}
+            </p>
+        </div>
+
+       {% partial 'blog/blog' %}
+
+    </div>
+        
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+
+    
+
+</div>

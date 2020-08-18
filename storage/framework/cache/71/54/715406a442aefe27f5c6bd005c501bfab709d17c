@@ -1,0 +1,145 @@
+1597732099a:1:{s:13:"blog/blog.htm";a:6:{s:8:"fileName";s:13:"blog/blog.htm";s:7:"content";s:5392:"[builderList blogPostList]
+modelClass = "iamb\Blog\Models\Blog"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "slug"
+noRecordsMessage = "No records found"
+detailsPage = "blog-post"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+recordsPerPage = 6
+pageNumber = "{{ :page }}"
+==
+<div class="blog  --container">
+            <h2 class="blog__title">Статтi</h2>
+            
+            
+            
+            
+            
+            {% set records = blogPostList.records %}
+            {% set displayColumn = blogPostList.displayColumn %}
+            {% set noRecordsMessage = blogPostList.noRecordsMessage %}
+            {% set detailsPage = blogPostList.detailsPage %}
+            {% set detailsKeyColumn = blogPostList.detailsKeyColumn %}
+            {% set detailsUrlParameter = blogPostList.detailsUrlParameter %}
+
+            <div class="blog__items">
+                {% for record in records %}
+                    
+                        {# Use spaceless tag to remove spaces inside the A tag. #}
+                        {% spaceless %}
+                            
+                        <div class="blog__item">
+                    <div class="blog__item__img-holder">
+                        <a href="/blog/{{ record.slug }}"><img class="blog__item__img" src="{{ record.picture|media }}" alt=""></a>
+                    </div>
+                    <h4 class="blog__item__title">{{ record.title }}</h4>
+                    <p class="blog__item__description">
+                        {{ record.description }}
+                    </p>
+                    <a href="/blog/{{ record.slug }}" class="blog__item__link">Читати далi&nbsp;&nbsp;<span>
+
+                        <svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+                            <title>Path</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop-HD" transform="translate(-195.000000, -4300.000000)">
+                                    <g id="Group-5" transform="translate(80.000000, 3720.000000)">
+                                        <g id="Group-6" transform="translate(0.000000, 100.000000)" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="32">
+                                            <text id="Олія-конопляна-догля">
+                                                <tspan x="1" y="274" fill="#272727">Олія конопляна догляд за руками </tspan>
+                                                <tspan x="1" y="306" fill="#272727">і нігтями</tspan>
+                                                <tspan x="1" y="348" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">Конопляна олія від природи збагачена </tspan>
+                                                <tspan x="1" y="380" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">величезною кількістю вітамінів та </tspan>
+                                                <tspan x="1" y="412" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">мікроелементів. Їх вплив на шкіру важко </tspan>
+                                                <tspan x="1" y="444" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">переоцінити! </tspan>
+                                                <tspan x="1" y="486" font-size="16" fill="#EF756E">Читати далi</tspan>
+                                            </text>
+                                        </g>
+                                        <path d="M121.670962,585.53176 L116.476816,580.191706 C116.356682,580.068097 116.196313,580 116.025316,580 C115.85432,580 115.693951,580.068097 115.573817,580.191706 L115.191304,580.584873 C114.9424,580.841066 114.9424,581.257453 115.191304,581.513256 L119.552955,585.997512 L115.186464,590.486744 C115.06633,590.610353 115,590.775132 115,590.950838 C115,591.126739 115.06633,591.291518 115.186464,591.415225 L115.568977,591.808294 C115.689206,591.931903 115.84948,592 116.020477,592 C116.191474,592 116.351842,591.931903 116.471977,591.808294 L121.670962,586.463362 C121.791381,586.339363 121.857521,586.173804 121.857143,585.997805 C121.857521,585.821124 121.791381,585.655661 121.670962,585.53176 Z" id="Path" fill="#F17570" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span></a>
+                </div>
+                            
+                        {% endspaceless %}
+                    
+                {% else %}
+                    <li class="no-data">{{ noRecordsMessage }}</li>
+                {% endfor %}
+            </div>
+
+            
+                
+
+            </div>";s:5:"mtime";i:1597662336;s:6:"markup";s:5097:"<div class="blog  --container">
+            <h2 class="blog__title">Статтi</h2>
+            
+            
+            
+            
+            
+            {% set records = blogPostList.records %}
+            {% set displayColumn = blogPostList.displayColumn %}
+            {% set noRecordsMessage = blogPostList.noRecordsMessage %}
+            {% set detailsPage = blogPostList.detailsPage %}
+            {% set detailsKeyColumn = blogPostList.detailsKeyColumn %}
+            {% set detailsUrlParameter = blogPostList.detailsUrlParameter %}
+
+            <div class="blog__items">
+                {% for record in records %}
+                    
+                        {# Use spaceless tag to remove spaces inside the A tag. #}
+                        {% spaceless %}
+                            
+                        <div class="blog__item">
+                    <div class="blog__item__img-holder">
+                        <a href="/blog/{{ record.slug }}"><img class="blog__item__img" src="{{ record.picture|media }}" alt=""></a>
+                    </div>
+                    <h4 class="blog__item__title">{{ record.title }}</h4>
+                    <p class="blog__item__description">
+                        {{ record.description }}
+                    </p>
+                    <a href="/blog/{{ record.slug }}" class="blog__item__link">Читати далi&nbsp;&nbsp;<span>
+
+                        <svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+                            <title>Path</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop-HD" transform="translate(-195.000000, -4300.000000)">
+                                    <g id="Group-5" transform="translate(80.000000, 3720.000000)">
+                                        <g id="Group-6" transform="translate(0.000000, 100.000000)" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="32">
+                                            <text id="Олія-конопляна-догля">
+                                                <tspan x="1" y="274" fill="#272727">Олія конопляна догляд за руками </tspan>
+                                                <tspan x="1" y="306" fill="#272727">і нігтями</tspan>
+                                                <tspan x="1" y="348" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">Конопляна олія від природи збагачена </tspan>
+                                                <tspan x="1" y="380" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">величезною кількістю вітамінів та </tspan>
+                                                <tspan x="1" y="412" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">мікроелементів. Їх вплив на шкіру важко </tspan>
+                                                <tspan x="1" y="444" font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#272727">переоцінити! </tspan>
+                                                <tspan x="1" y="486" font-size="16" fill="#EF756E">Читати далi</tspan>
+                                            </text>
+                                        </g>
+                                        <path d="M121.670962,585.53176 L116.476816,580.191706 C116.356682,580.068097 116.196313,580 116.025316,580 C115.85432,580 115.693951,580.068097 115.573817,580.191706 L115.191304,580.584873 C114.9424,580.841066 114.9424,581.257453 115.191304,581.513256 L119.552955,585.997512 L115.186464,590.486744 C115.06633,590.610353 115,590.775132 115,590.950838 C115,591.126739 115.06633,591.291518 115.186464,591.415225 L115.568977,591.808294 C115.689206,591.931903 115.84948,592 116.020477,592 C116.191474,592 116.351842,591.931903 116.471977,591.808294 L121.670962,586.463362 C121.791381,586.339363 121.857521,586.173804 121.857143,585.997805 C121.857521,585.821124 121.791381,585.655661 121.670962,585.53176 Z" id="Path" fill="#F17570" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span></a>
+                </div>
+                            
+                        {% endspaceless %}
+                    
+                {% else %}
+                    <li class="no-data">{{ noRecordsMessage }}</li>
+                {% endfor %}
+            </div>
+
+            
+                
+
+            </div>";s:4:"code";N;s:24:"builderList blogPostList";a:10:{s:10:"modelClass";s:21:"iamb\Blog\Models\Blog";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:9:"blog-post";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:14:"recordsPerPage";s:1:"6";s:10:"pageNumber";s:11:"{{ :page }}";}}}

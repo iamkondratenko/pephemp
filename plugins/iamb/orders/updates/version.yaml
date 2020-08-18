@@ -39,3 +39,6 @@
 1.0.14:
     - 'Updated table iamb_orders_db'
     - builder_table_update_iamb_orders_db_9.php
+1.0.15:
+    - 'Updated table iamb_orders_db'
+    - builder_table_update_iamb_orders_db_10.php

@@ -208,7 +208,7 @@ function cartUpdate() {
     let cartArray = []
 
 
-    if (Object.keys(cart).length == 0) {
+    if (Object.keys(cart).length == 0 && cart != true) {
 
         let newCart = '<div class="modals__cart__section__empty-cart">В кошику ще нема товарiв :(</div>'
         cartArray.push(newCart)
@@ -695,6 +695,5 @@ xhr.setRequestHeader("content-type", "application/json");
 xhr.send(data);
 
 
-
-
+localStorage.removeItem('cart');
 }

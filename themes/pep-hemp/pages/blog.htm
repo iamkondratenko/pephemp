@@ -1,0 +1,13 @@
+title = "Блог"
+url = "/blog"
+layout = "default"
+is_hidden = 0
+==
+
+{% put title %}
+    {% default %} {{ this.page.title }}
+{% endput %}
+
+<div id="App">
+    {% partial 'blog/blog' %}
+</div>
