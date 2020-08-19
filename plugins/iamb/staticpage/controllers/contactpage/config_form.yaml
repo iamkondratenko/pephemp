@@ -1,0 +1,10 @@
+name: ContactPage
+form: $/iamb/staticpage/models/contactpage/fields.yaml
+modelClass: iamb\StaticPage\Models\ContactPage
+defaultRedirect: iamb/staticpage/contactpage
+create:
+    redirect: 'iamb/staticpage/contactpage/update/:id'
+    redirectClose: iamb/staticpage/contactpage
+update:
+    redirect: iamb/staticpage/contactpage
+    redirectClose: iamb/staticpage/contactpage

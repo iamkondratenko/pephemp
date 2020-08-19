@@ -9,3 +9,9 @@
 1.0.4:
     - 'Updated table iamb_staticpage_'
     - builder_table_update_iamb_staticpage__2.php
+1.0.5:
+    - 'Created table iamb_staticpage_contacts'
+    - builder_table_create_iamb_staticpage_contacts.php
+1.0.6:
+    - 'Created table iamb_staticpage_homepage_blocks'
+    - builder_table_create_iamb_staticpage_homepage_blocks.php

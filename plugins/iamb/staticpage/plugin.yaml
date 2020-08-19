@@ -6,15 +6,19 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: 'Другие страницы'
+        label: 'Страницы и блоки'
         url: iamb/staticpage/staticpage
         icon: icon-th-large
         sideMenu:
             side-menu-item:
                 label: 'О нас'
                 url: iamb/staticpage/staticpage
-                icon: icon-stop
+                icon: icon-list-alt
             side-menu-item2:
                 label: Контакты
-                url: /
-                icon: icon-stop
+                url: iamb/staticpage/contactpage
+                icon: icon-map-marker
+            side-menu-item3:
+                label: 'Блоки на главной'
+                url: iamb/staticpage/homepageblocks
+                icon: icon-th-list

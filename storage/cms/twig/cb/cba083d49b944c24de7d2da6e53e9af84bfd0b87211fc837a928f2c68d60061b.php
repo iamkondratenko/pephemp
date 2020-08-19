@@ -49,7 +49,7 @@ class __TwigTemplate_1a2a8f9bb363e43a7ffefc58165c9d2105beeece8f92b4d0356eaaf09bc
 <div class=\"catalog --container ancore\" id=\"catalog-ancore\">
             <div class=\"catalog__header\">
                 <h2 class=\"catalog__title\">Каталог</h2>
-                <a href=\"#\" class=\"catalog__header-price\">Получить прайс</a>
+                <a href=\"/storage/app/media/Прайс/price.pdf\" class=\"catalog__header-price\" target=\"blanc\">Получить прайс</a>
             </div>
 
             <div class=\"catalog__products-section\">
@@ -96,7 +96,9 @@ class __TwigTemplate_1a2a8f9bb363e43a7ffefc58165c9d2105beeece8f92b4d0356eaaf09bc
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 29), "html", null, true);
             echo "\" class=\"catalog-homepage__filter-item\" data-category=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "slug", [], "any", false, false, false, 29), "html", null, true);
-            echo "\">Протеiн</a>
+            echo "\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "category_title", [], "any", false, false, false, 29), "html", null, true);
+            echo "</a>
                                     ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
             // line 31
@@ -248,7 +250,7 @@ class __TwigTemplate_1a2a8f9bb363e43a7ffefc58165c9d2105beeece8f92b4d0356eaaf09bc
 
     public function getDebugInfo()
     {
-        return array (  225 => 86,  216 => 84,  210 => 82,  200 => 75,  196 => 74,  184 => 65,  179 => 63,  173 => 60,  167 => 58,  164 => 57,  157 => 55,  152 => 54,  146 => 50,  143 => 49,  140 => 48,  137 => 47,  134 => 46,  131 => 45,  129 => 44,  118 => 35,  109 => 33,  103 => 31,  95 => 29,  92 => 28,  89 => 26,  84 => 25,  80 => 23,  77 => 22,  74 => 21,  71 => 20,  68 => 19,  65 => 18,  63 => 17,  48 => 4,  46 => 1,  39 => 2,  37 => 1,);
+        return array (  227 => 86,  218 => 84,  212 => 82,  202 => 75,  198 => 74,  186 => 65,  181 => 63,  175 => 60,  169 => 58,  166 => 57,  159 => 55,  154 => 54,  148 => 50,  145 => 49,  142 => 48,  139 => 47,  136 => 46,  133 => 45,  131 => 44,  120 => 35,  111 => 33,  105 => 31,  95 => 29,  92 => 28,  89 => 26,  84 => 25,  80 => 23,  77 => 22,  74 => 21,  71 => 20,  68 => 19,  65 => 18,  63 => 17,  48 => 4,  46 => 1,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -260,7 +262,7 @@ class __TwigTemplate_1a2a8f9bb363e43a7ffefc58165c9d2105beeece8f92b4d0356eaaf09bc
 <div class=\"catalog --container ancore\" id=\"catalog-ancore\">
             <div class=\"catalog__header\">
                 <h2 class=\"catalog__title\">Каталог</h2>
-                <a href=\"#\" class=\"catalog__header-price\">Получить прайс</a>
+                <a href=\"/storage/app/media/Прайс/price.pdf\" class=\"catalog__header-price\" target=\"blanc\">Получить прайс</a>
             </div>
 
             <div class=\"catalog__products-section\">
@@ -281,7 +283,7 @@ class __TwigTemplate_1a2a8f9bb363e43a7ffefc58165c9d2105beeece8f92b4d0356eaaf09bc
 
                                     {# Use spaceless tag to remove spaces inside the A tag. #}
                                     {% spaceless %}
-                                        <a href=\"#catalog-{{ record.slug }}\" class=\"catalog-homepage__filter-item\" data-category=\"{{ record.slug }}\">Протеiн</a>
+                                        <a href=\"#catalog-{{ record.slug }}\" class=\"catalog-homepage__filter-item\" data-category=\"{{ record.slug }}\">{{ record.category_title }}</a>
                                     {% endspaceless %}
 
                             {% else %}

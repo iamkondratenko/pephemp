@@ -61,7 +61,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link href=\"";
         // line 14
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css?fgg23ffffhgf4df");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css?fgg23ffffhgffff4ffdf");
         echo "\" rel=\"stylesheet\">
         ";
         // line 15
@@ -110,7 +110,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         <!-- Scripts -->
         <script src=\"";
         // line 31
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js?23fcf");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js?2ffffgаfff3fcf");
         echo "\"></script>
         ";
         // line 32
@@ -152,7 +152,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link href=\"{{ 'assets/css/style.css?fgg23ffffhgf4df'|theme }}\" rel=\"stylesheet\">
+        <link href=\"{{ 'assets/css/style.css?fgg23ffffhgffff4ffdf'|theme }}\" rel=\"stylesheet\">
         {% styles %}
         <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" integrity=\"sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=\" crossorigin=\"anonymous\"></script>
         {% framework extras %}
@@ -169,7 +169,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
             {% partial 'site/footer' %}
 
         <!-- Scripts -->
-        <script src=\"{{ 'assets/javascript/app.js?23fcf'|theme }}\"></script>
+        <script src=\"{{ 'assets/javascript/app.js?2ffffgаfff3fcf'|theme }}\"></script>
         {% scripts %}
 
     </body>

@@ -1,0 +1,10 @@
+name: FileList
+form: $/iamb/productlist/models/fileupload/fields.yaml
+modelClass: iamb\Productlist\Models\FileUpload
+defaultRedirect: iamb/productlist/filelist
+create:
+    redirect: 'iamb/productlist/filelist/update/:id'
+    redirectClose: iamb/productlist/filelist
+update:
+    redirect: iamb/productlist/filelist
+    redirectClose: iamb/productlist/filelist

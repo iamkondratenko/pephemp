@@ -1,4 +1,4 @@
-1597732099a:1:{s:15:"static-page.htm";a:8:{s:8:"fileName";s:15:"static-page.htm";s:7:"content";s:109:"
+1597845699a:1:{s:15:"static-page.htm";a:8:{s:8:"fileName";s:15:"static-page.htm";s:7:"content";s:109:"
 url = "/:slug"
 layout = "default"
 is_hidden = 0
@@ -9,6 +9,6 @@ is_hidden = 0
 
 <div id="App">
     {% partial 'site/static' %}
-</div>";s:5:"mtime";i:1597693916;s:6:"markup";s:53:"<div id="App">
+</div>";s:5:"mtime";i:1597844295;s:6:"markup";s:53:"<div id="App">
     {% partial 'site/static' %}
 </div>";s:4:"code";N;s:3:"url";s:6:"/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

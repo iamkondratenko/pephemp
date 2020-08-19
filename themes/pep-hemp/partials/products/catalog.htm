@@ -27,7 +27,7 @@ pageNumber = "{{ :page }}"
 <div class="catalog --container ancore" id="catalog-ancore">
             <div class="catalog__header">
                 <h2 class="catalog__title">Каталог</h2>
-                <a href="#" class="catalog__header-price">Получить прайс</a>
+                <a href="/storage/app/media/Прайс/price.pdf" class="catalog__header-price" target="blanc">Получить прайс</a>
             </div>
 
             <div class="catalog__products-section">
@@ -48,7 +48,7 @@ pageNumber = "{{ :page }}"
 
                                     {# Use spaceless tag to remove spaces inside the A tag. #}
                                     {% spaceless %}
-                                        <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">Протеiн</a>
+                                        <a href="#catalog-{{ record.slug }}" class="catalog-homepage__filter-item" data-category="{{ record.slug }}">{{ record.category_title }}</a>
                                     {% endspaceless %}
 
                             {% else %}

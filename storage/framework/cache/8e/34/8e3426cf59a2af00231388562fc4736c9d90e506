@@ -1,4 +1,4 @@
-1597732099a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:213:"title = "Главная"
+1597845699a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:208:"title = "Главная"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -8,7 +8,7 @@ is_hidden = 0
 {% partial 'site/bullets' %}
 {% partial 'products/catalog' %}
 {% partial 'blog/blog' %}
-</div>";s:5:"mtime";i:1597694416;s:6:"markup";s:142:"<div id="App">
+</div>";s:5:"mtime";i:1597844295;s:6:"markup";s:137:"<div id="App">
 {% partial 'site/banner' %}
 {% partial 'site/bullets' %}
 {% partial 'products/catalog' %}

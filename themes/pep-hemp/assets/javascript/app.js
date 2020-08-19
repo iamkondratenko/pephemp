@@ -135,7 +135,7 @@ function addToCart(id, productTitle, productDescription, productPrice, productPi
                     id: id,
                     productTitle: productTitle,
                     productDescription: productDescription,
-                    productPic: productPic.replace('../' | '/', window.location.origin + '/'),
+                    productPic: productPic,
                     productPrice: productPrice,
                     quantity: quantity
                 }
@@ -289,18 +289,31 @@ function openCartDrawer() {
     document.body.classList.toggle('--cartDrawerIsOpen')
     let cartModal = document.querySelector('.modals__cart')
     let cartDrawer = document.querySelector('.modals__cart__section')
+    let closeButton = document.querySelector('.modals__cart__close-button')
     cartModal.classList.toggle('modals__cart__is-showing')
     cartModal.classList.remove('orderDrawer-isShowing')
     cartDrawer.classList.toggle('--cart__drawer__is-showing')
+
+    if (cartModal.classList.contains('modals__cart__is-showing')) {
+      closeButton.style.display = 'block'
+    } else {
+      closeButton.style.display = 'none'
+    }
+
+
 }
 
 function closingCartDrawer() {
     document.body.classList.remove('--cartDrawerIsOpen')
     let cartModal = document.querySelector('.modals__cart')
     let cartDrawer = document.querySelector('.modals__cart__section')
+    let closeButton = document.querySelector('.modals__cart__close-button')
     cartModal.classList.remove('modals__cart__is-showing')
     cartModal.classList.remove('orderDrawer-isShowing')
     cartDrawer.classList.remove('--cart__drawer__is-showing')
+    closeButton.style.display = 'none'
+
+
 }
 
 function closeButtonOnBg() {
@@ -474,8 +487,10 @@ function checkCity() {
         document.querySelector('.form-field.radio-delivery-fields').classList.add('radio-delivery-fields__is-showing')
         if (deliveryType.value.toLowerCase() != 'киев' && deliveryType.value.toLowerCase() != "м. Київ, Київська обл.".toLowerCase()) {
             document.querySelector('.radio__input-field.delivery-pickpoint').classList.add('delivery-type-is-hiding')
+            
         } else {
             document.querySelector('.radio__input-field.delivery-pickpoint').classList.remove('delivery-type-is-hiding')
+            document.querySelector('#pickpoint').checked = true;
         }
 
     })
@@ -685,7 +700,7 @@ xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
-    document.location.replace('/thankyoupage');
+    // document.location.replace('/thankyoupage');
   }
 });
 

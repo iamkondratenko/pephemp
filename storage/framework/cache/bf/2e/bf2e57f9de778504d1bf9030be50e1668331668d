@@ -1,4 +1,4 @@
-1597732099a:1:{s:13:"blog-post.htm";a:9:{s:8:"fileName";s:13:"blog-post.htm";s:7:"content";s:132:"title = "Блог"
+1597845699a:1:{s:13:"blog-post.htm";a:9:{s:8:"fileName";s:13:"blog-post.htm";s:7:"content";s:132:"title = "Блог"
 url = "/blog/:slug"
 layout = "default"
 is_hidden = 0
@@ -6,6 +6,6 @@ is_hidden = 0
 
 <div id="App">
     {% partial 'blog/blog-post' %}
-</div>";s:5:"mtime";i:1597662336;s:6:"markup";s:56:"<div id="App">
+</div>";s:5:"mtime";i:1597844295;s:6:"markup";s:56:"<div id="App">
     {% partial 'blog/blog-post' %}
 </div>";s:4:"code";N;s:5:"title";s:8:"Блог";s:3:"url";s:11:"/blog/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

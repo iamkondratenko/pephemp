@@ -1,0 +1,146 @@
+1597844972a:1:{s:12:"thankyou.htm";a:5:{s:8:"fileName";s:12:"thankyou.htm";s:7:"content";s:2959:"<div id="App">
+
+    <div class="main-banner" data-bannerid="bid">
+
+        <div class="main-banner__text-section --container">
+            <h1 class="main-banner__title">Дякуемо за замовлення</h1>
+            <p class="main-banner__description">
+                 Ваше замовлення прийнято. <br>У разi необхiдностi, наш менеджер зателефонує вам
+            </p>
+            <a href="/" class="catalog__header-price">Повернутися на головну</a>
+        </div>
+<!--        <div class="main-banner__kod-bg"></div>-->
+        <div class="main-banner__weed-left">
+
+            <div class="weed-right__root --weed-right__img">
+                <img class="weed-right__root__img --root__img" src="{{ '/assets/weed/root.png?123'|theme }}">
+            </div>
+
+            <div class="weed-right__1st --weed-right__img">
+                <img class="weed-right__1st__img --root__img" src="{{ '/assets/weed/1.png'|theme }}">
+            </div>
+
+            <div class="weed-right__2nd --weed-right__img">
+                <img class="weed-right__2nd__img --root__img" src="{{ '/assets/weed/2.png'|theme }}">
+            </div>
+
+            <div class="weed-right__3rd --weed-right__img">
+                <img class="weed-right__3rd__img --root__img" src="{{ '/assets/weed/3.png'|theme }}">
+            </div>
+
+            <div class="weed-right__4th --weed-right__img">
+                <img class="weed-right__4th__img --root__img" src="{{ '/assets/weed/4.png'|theme }}">
+            </div>
+
+            <div class="weed-right__5th --weed-right__img">
+                <img class="weed-right__5th__img --root__img" src="{{ '/assets/weed/5.png'|theme }}">
+            </div>
+
+        </div>
+        <div class="main-banner__weed-right">
+
+            <div class="weed-right__root --weed-right__img">
+                <img class="weed-right__root__img --root__img" src="{{ '/assets/weed/root.png?234'|theme }}">
+            </div>
+
+            <div class="weed-right__1st --weed-right__img">
+                <img class="weed-right__1st__img --root__img" src="{{ '/assets/weed/1.png'|theme }}">
+            </div>
+
+            <div class="weed-right__2nd --weed-right__img">
+                <img class="weed-right__2nd__img --root__img" src="{{ '/assets/weed/2.png'|theme }}">
+            </div>
+
+            <div class="weed-right__3rd --weed-right__img">
+                <img class="weed-right__3rd__img --root__img" src="{{ '/assets/weed/3.png'|theme }}">
+            </div>
+
+            <div class="weed-right__4th --weed-right__img">
+                <img class="weed-right__4th__img --root__img" src="{{ '/assets/weed/4.png'|theme }}">
+            </div>
+
+            <div class="weed-right__5th --weed-right__img">
+                <img class="weed-right__5th__img --root__img" src="{{ '/assets/weed/5.png'|theme }}">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+";s:5:"mtime";i:1597844295;s:6:"markup";s:2958:"<div id="App">
+
+    <div class="main-banner" data-bannerid="bid">
+
+        <div class="main-banner__text-section --container">
+            <h1 class="main-banner__title">Дякуемо за замовлення</h1>
+            <p class="main-banner__description">
+                 Ваше замовлення прийнято. <br>У разi необхiдностi, наш менеджер зателефонує вам
+            </p>
+            <a href="/" class="catalog__header-price">Повернутися на головну</a>
+        </div>
+<!--        <div class="main-banner__kod-bg"></div>-->
+        <div class="main-banner__weed-left">
+
+            <div class="weed-right__root --weed-right__img">
+                <img class="weed-right__root__img --root__img" src="{{ '/assets/weed/root.png?123'|theme }}">
+            </div>
+
+            <div class="weed-right__1st --weed-right__img">
+                <img class="weed-right__1st__img --root__img" src="{{ '/assets/weed/1.png'|theme }}">
+            </div>
+
+            <div class="weed-right__2nd --weed-right__img">
+                <img class="weed-right__2nd__img --root__img" src="{{ '/assets/weed/2.png'|theme }}">
+            </div>
+
+            <div class="weed-right__3rd --weed-right__img">
+                <img class="weed-right__3rd__img --root__img" src="{{ '/assets/weed/3.png'|theme }}">
+            </div>
+
+            <div class="weed-right__4th --weed-right__img">
+                <img class="weed-right__4th__img --root__img" src="{{ '/assets/weed/4.png'|theme }}">
+            </div>
+
+            <div class="weed-right__5th --weed-right__img">
+                <img class="weed-right__5th__img --root__img" src="{{ '/assets/weed/5.png'|theme }}">
+            </div>
+
+        </div>
+        <div class="main-banner__weed-right">
+
+            <div class="weed-right__root --weed-right__img">
+                <img class="weed-right__root__img --root__img" src="{{ '/assets/weed/root.png?234'|theme }}">
+            </div>
+
+            <div class="weed-right__1st --weed-right__img">
+                <img class="weed-right__1st__img --root__img" src="{{ '/assets/weed/1.png'|theme }}">
+            </div>
+
+            <div class="weed-right__2nd --weed-right__img">
+                <img class="weed-right__2nd__img --root__img" src="{{ '/assets/weed/2.png'|theme }}">
+            </div>
+
+            <div class="weed-right__3rd --weed-right__img">
+                <img class="weed-right__3rd__img --root__img" src="{{ '/assets/weed/3.png'|theme }}">
+            </div>
+
+            <div class="weed-right__4th --weed-right__img">
+                <img class="weed-right__4th__img --root__img" src="{{ '/assets/weed/4.png'|theme }}">
+            </div>
+
+            <div class="weed-right__5th --weed-right__img">
+                <img class="weed-right__5th__img --root__img" src="{{ '/assets/weed/5.png'|theme }}">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>";s:4:"code";N;}}

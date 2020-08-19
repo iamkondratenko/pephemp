@@ -8,4 +8,4 @@ navigation:
     main-menu-item:
         label: Заказы
         url: iamb/orders/orders
-        icon: icon-life-ring
+        icon: icon-shopping-cart

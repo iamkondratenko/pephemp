@@ -37,29 +37,30 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         echo "<div id=\"App-footer\">
         <div class=\"subscribe-section\">
             <div class=\"subscribe-section__text\">
-                <h3 class=\"subscribe-section__title\">Пiдписатися на новини</h3>
+                <h3 class=\"subscribe-section__title\">Задать вопрос</h3>
                 <p class=\"subscribe-section__description\">
-                    Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
-                    Обіцяємо, це дуже буде дуже цiкаво
+                    Если у Вас остались какие то вопросы, вы можете задать их в форме обратной связи
                 </p>
                 <form data-request=\"";
-        // line 9
+        // line 8
         echo twig_escape_filter($this->env, ($context["genericForm"] ?? null), "html", null, true);
-        echo "::onFormSubmit\">
+        echo "::onFormSubmit\" class=\"question-form\">
 
     ";
-        // line 11
+        // line 10
         echo call_user_func_array($this->env->getFunction('form_token')->getCallable(), ["token"]);
         echo "
 
     <div id=\"";
-        // line 13
+        // line 12
         echo twig_escape_filter($this->env, ($context["genericForm"] ?? null), "html", null, true);
         echo "_forms_flash\"></div>
 
 
-    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
-    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Email\">
+    <input type=\"text\" id=\"phone\" name=\"phone\" class=\"subscribe-section__input\" placeholder=\"Телефон\">
+    <textarea rows=\"10\" cols=\"45\" name=\"text\" placeholder=\"Ваш вопрос\" class=\"subscribe-form-section__text\"></textarea>
+    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Задать вопрос</button>
 
 
 
@@ -137,7 +138,10 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         </footer>
 
         <div class=\"modals\">
+        <div class=\"modals__cart__close-button\" onclick=\"openCartDrawer()\"></div>
             <div class=\"modals__cart\">
+
+
                 <div class=\"modals__cart__section\">
                     <div class=\"modals__cart__section__header\">
                         <h3 class=\"modals__cart__section__title\">Кошик</h3>
@@ -183,40 +187,40 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
 
 
 
-                    <form class=\"ordering-form\" action=\"/thankyoupage/\">
+                    <form class=\"ordering-form\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
-                                    <div class=\"label-field__ordering-form\">Введите имя:</div>
+                                    <div class=\"label-field__ordering-form\">Имя:</div>
                                     <input class=\"ordering-field\" type=\"text\" name=\"first_name\" required>
                                 </div>
                                 <div class=\"form-field second-name\">
-                                    <div class=\"label-field__ordering-form\">Введите фамилию:</div>
+                                    <div class=\"label-field__ordering-form\">Фамилия:</div>
                                     <input class=\"ordering-field\" type=\"name\" name=\"last_name\" required>
                                 </div>
                                 <div class=\"form-field email\">
-                                    <div class=\"label-field__ordering-form\">Введите email:</div>
+                                    <div class=\"label-field__ordering-form\">Email:</div>
                                     <input class=\"ordering-field\" type=\"email\" name=\"order_email\">
                                 </div>
                                 <div class=\"form-field phone\">
-                                    <div class=\"label-field__ordering-form\">Введите телефон:</div>
+                                    <div class=\"label-field__ordering-form\">Телефон:</div>
                                     <input class=\"ordering-field\" type=\"tel\" name=\"phone\" required>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-fields\">
-                            <h4 class=\"form-fields__title\">Доставка та оплата</h4>
+                            <h4 class=\"form-fields__title\">Доставка и оплата</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
-                                    <div class=\"label-field__ordering-form\">Мiсто:</div>
+                                    <div class=\"label-field__ordering-form\">Город:</div>
                                     <input type=\"text\" name=\"city\" list=\"cityList\" class=\"ordering-field cityList\" required>
                                     <datalist id=\"cityList\">
 
                                     </datalist>
                                 </div>
                                 <div class=\"form-field radio-delivery-fields\">
-                                    <div class=\"label-field__ordering-form\">Вулиця:</div>
+                                    <div class=\"label-field__ordering-form\">Тип доставки:</div>
                                     <div class=\"input-fields\">
                                         <div class=\"radio__input-field\">
                                             <input class=\"ordering-field radio-delivery-field\" name=\"delivery\" value=\"novaposhta\" type=\"radio\" id=\"novaposhta\"><label class=\"label__form-field\" for=\"novaposhta\" checked>Нова Пошта</label>
@@ -228,7 +232,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                                     </div>
                                 </div>
                                 <div class=\"form-field np-department\">
-                                    <div class=\"label-field__ordering-form\">Вiддiлення:</div>
+                                    <div class=\"label-field__ordering-form\">Отделение:</div>
                                     <input type=\"text\" name=\"department\" list=\"depList\" class=\"ordering-field depList\" required>
                                     <datalist id=\"depList\">
 
@@ -237,8 +241,8 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             </div>
                         </div>
                         <div class=\"modals__order__section__footer\">
-                            <h3 class=\"modals__cart__section__title\">Всього:&nbsp;<div class=\"order_total_count\"></div></h3>
-                            <button class=\"order-button\" onclick=\"ordering()\">Оформити замовлення</button>
+                            <h3 class=\"modals__cart__section__title\">Всего:&nbsp;<div class=\"order_total_count\"></div></h3>
+                            <button class=\"order-button\" onclick=\"ordering()\">Оформить заказ</button>
                         </div>
                     </form>
                 </div>
@@ -259,7 +263,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
 
     public function getDebugInfo()
     {
-        return array (  57 => 13,  52 => 11,  47 => 9,  37 => 1,);
+        return array (  56 => 12,  51 => 10,  46 => 8,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -267,20 +271,21 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         return new Source("<div id=\"App-footer\">
         <div class=\"subscribe-section\">
             <div class=\"subscribe-section__text\">
-                <h3 class=\"subscribe-section__title\">Пiдписатися на новини</h3>
+                <h3 class=\"subscribe-section__title\">Задать вопрос</h3>
                 <p class=\"subscribe-section__description\">
-                    Якщо хочеш, ми можем надсилати тобi важливу iнформацiю на email
-                    Обіцяємо, це дуже буде дуже цiкаво
+                    Если у Вас остались какие то вопросы, вы можете задать их в форме обратной связи
                 </p>
-                <form data-request=\"{{ genericForm }}::onFormSubmit\">
+                <form data-request=\"{{ genericForm }}::onFormSubmit\" class=\"question-form\">
 
     {{ form_token() }}
 
     <div id=\"{{ genericForm }}_forms_flash\"></div>
 
 
-    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Введи свiй email\">
-    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Пiдписатися</button>
+    <input type=\"text\" id=\"email\" name=\"email\" class=\"subscribe-section__input\" placeholder=\"Email\">
+    <input type=\"text\" id=\"phone\" name=\"phone\" class=\"subscribe-section__input\" placeholder=\"Телефон\">
+    <textarea rows=\"10\" cols=\"45\" name=\"text\" placeholder=\"Ваш вопрос\" class=\"subscribe-form-section__text\"></textarea>
+    <button type=\"submit\" class=\"subscribe-section__subscribe-button\">Задать вопрос</button>
 
 
 
@@ -358,7 +363,10 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
         </footer>
 
         <div class=\"modals\">
+        <div class=\"modals__cart__close-button\" onclick=\"openCartDrawer()\"></div>
             <div class=\"modals__cart\">
+
+
                 <div class=\"modals__cart__section\">
                     <div class=\"modals__cart__section__header\">
                         <h3 class=\"modals__cart__section__title\">Кошик</h3>
@@ -404,40 +412,40 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
 
 
 
-                    <form class=\"ordering-form\" action=\"/thankyoupage/\">
+                    <form class=\"ordering-form\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
-                                    <div class=\"label-field__ordering-form\">Введите имя:</div>
+                                    <div class=\"label-field__ordering-form\">Имя:</div>
                                     <input class=\"ordering-field\" type=\"text\" name=\"first_name\" required>
                                 </div>
                                 <div class=\"form-field second-name\">
-                                    <div class=\"label-field__ordering-form\">Введите фамилию:</div>
+                                    <div class=\"label-field__ordering-form\">Фамилия:</div>
                                     <input class=\"ordering-field\" type=\"name\" name=\"last_name\" required>
                                 </div>
                                 <div class=\"form-field email\">
-                                    <div class=\"label-field__ordering-form\">Введите email:</div>
+                                    <div class=\"label-field__ordering-form\">Email:</div>
                                     <input class=\"ordering-field\" type=\"email\" name=\"order_email\">
                                 </div>
                                 <div class=\"form-field phone\">
-                                    <div class=\"label-field__ordering-form\">Введите телефон:</div>
+                                    <div class=\"label-field__ordering-form\">Телефон:</div>
                                     <input class=\"ordering-field\" type=\"tel\" name=\"phone\" required>
                                 </div>
                             </div>
                         </div>
                         <div class=\"form-fields\">
-                            <h4 class=\"form-fields__title\">Доставка та оплата</h4>
+                            <h4 class=\"form-fields__title\">Доставка и оплата</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
-                                    <div class=\"label-field__ordering-form\">Мiсто:</div>
+                                    <div class=\"label-field__ordering-form\">Город:</div>
                                     <input type=\"text\" name=\"city\" list=\"cityList\" class=\"ordering-field cityList\" required>
                                     <datalist id=\"cityList\">
 
                                     </datalist>
                                 </div>
                                 <div class=\"form-field radio-delivery-fields\">
-                                    <div class=\"label-field__ordering-form\">Вулиця:</div>
+                                    <div class=\"label-field__ordering-form\">Тип доставки:</div>
                                     <div class=\"input-fields\">
                                         <div class=\"radio__input-field\">
                                             <input class=\"ordering-field radio-delivery-field\" name=\"delivery\" value=\"novaposhta\" type=\"radio\" id=\"novaposhta\"><label class=\"label__form-field\" for=\"novaposhta\" checked>Нова Пошта</label>
@@ -449,7 +457,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                                     </div>
                                 </div>
                                 <div class=\"form-field np-department\">
-                                    <div class=\"label-field__ordering-form\">Вiддiлення:</div>
+                                    <div class=\"label-field__ordering-form\">Отделение:</div>
                                     <input type=\"text\" name=\"department\" list=\"depList\" class=\"ordering-field depList\" required>
                                     <datalist id=\"depList\">
 
@@ -458,8 +466,8 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             </div>
                         </div>
                         <div class=\"modals__order__section__footer\">
-                            <h3 class=\"modals__cart__section__title\">Всього:&nbsp;<div class=\"order_total_count\"></div></h3>
-                            <button class=\"order-button\" onclick=\"ordering()\">Оформити замовлення</button>
+                            <h3 class=\"modals__cart__section__title\">Всего:&nbsp;<div class=\"order_total_count\"></div></h3>
+                            <button class=\"order-button\" onclick=\"ordering()\">Оформить заказ</button>
                         </div>
                     </form>
                 </div>
