@@ -146,4 +146,5 @@
   'iamb\\staticpage\\Controllers\\staticpage' => 'plugins/iamb/staticpage/controllers/staticpage.php',
   'iamb\\StaticPage\\Models\\StaticPage' => 'plugins/iamb/staticpage/models/StaticPage.php',
   'iamb\\StaticPage\\Models\\HomePageBlocks' => 'plugins/iamb/staticpage/models/HomePageBlocks.php',
+  'iamb\\productlist\\LiqPay' => 'plugins/iamb/productlist/LiqPay.php',
 );

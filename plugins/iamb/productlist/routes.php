@@ -3,6 +3,7 @@
   use Illuminate\Http\Request;
   use Illuminate\Http\Response;
   use iamb\productlist\models\ProductList;
+  // include 'LiqPay.php';
   use iamb\orders\models\Orders;
 
   Route::match(['get', 'post'], '/api/order/', function(Request $request){
@@ -42,6 +43,19 @@
     ));
 
 
+    // $liqpay = new LiqPay('sandbox_i41249939473', 'sandbox_dszQGAoDyE7w1GVyHntqjCwtvKJF9nNHWpbPnOjk');
+    //   $html = $liqpay->cnb_form(array(
+    //   'action'         => 'pay',
+    //   'amount'         => '1',
+    //   'currency'       => 'UAH',
+    //   'description'    => 'description text',
+    //   'order_id'       => 'order_id_4',
+    //   'version'        => '3'
+    // ));
+
+
+
+
   class OrderResult {
     var $totalForPay;
   }
@@ -50,10 +64,11 @@
   $object->totalForPay = $total;
 
 
+  print_r ($liqpay);
 
-  return response($orders)
-        ->header( 'Access-Control-Allow-Origin', '*' );
-  ;
+  // return response($total)
+  //       ->header( 'Access-Control-Allow-Origin', '*' );
+  // ;
 
 
   });
