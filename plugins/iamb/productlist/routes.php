@@ -3,6 +3,7 @@
   use Illuminate\Http\Request;
   use Illuminate\Http\Response;
   use iamb\productlist\models\ProductList;
+  // include 'LiqPay.php';
   use iamb\orders\models\Orders;
 
   Route::match(['get', 'post'], '/api/order/', function(Request $request){
@@ -24,12 +25,12 @@
         $productQuantity = $basketItems->quantity;
 
         if ($productItem->id == $productId) {
-          $total = ($total + $productItem->price) * $productQuantity;
+          $total = $total + ($productItem->price * $productQuantity);
         };
       }
     }
 
-    Orders::insert(array(
+    $queryState = Orders::insertGetId(array(
       'first_name' => $res->first_name,
       'last_name' => $res->last_name,
       'email' => $res->email,
@@ -42,6 +43,9 @@
     ));
 
 
+
+
+
   class OrderResult {
     var $totalForPay;
   }
@@ -49,11 +53,25 @@
   $object = new OrderResult;
   $object->totalForPay = $total;
 
+  $public_liqpay = 'sandbox_i41249939473';
+  $private_liqpay = 'sandbox_dszQGAoDyE7w1GVyHntqjCwtvKJF9nNHWpbPnOjk';
+  $json_liqpay = base64_encode('{"public_key":"sandbox_i41249939473","version":"3","action":"pay","amount":"' . $total . '","currency":"UAH","description": "Оплата заказа №'.$queryState.'","order_id":'.$queryState.'}');
 
 
-  return response($orders)
-        ->header( 'Access-Control-Allow-Origin', '*' );
-  ;
+
+$sign_string = $private_liqpay.$json_liqpay.$private_liqpay;
+
+$sign_result = base64_encode ( sha1 ( $sign_string, true ));
+
+return response(strval('/thankyoupage/?'.'data='.$json_liqpay.'&signature='.$sign_result))
+  ->header( 'Access-Control-Allow-Origin', '*' );
+;
+
+
+
+  // return response($total)
+  //       ->header( 'Access-Control-Allow-Origin', '*' );
+  // ;
 
 
   });

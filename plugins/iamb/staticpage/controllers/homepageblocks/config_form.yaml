@@ -1,0 +1,10 @@
+name: HomePageBlocks
+form: $/iamb/staticpage/models/homepageblocks/fields.yaml
+modelClass: iamb\StaticPage\Models\HomePageBlocks
+defaultRedirect: iamb/staticpage/homepageblocks
+create:
+    redirect: 'iamb/staticpage/homepageblocks/update/:id'
+    redirectClose: iamb/staticpage/homepageblocks
+update:
+    redirect: iamb/staticpage/homepageblocks
+    redirectClose: iamb/staticpage/homepageblocks

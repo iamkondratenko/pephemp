@@ -3,11 +3,13 @@
     <div class="main-banner" data-bannerid="bid">
 
         <div class="main-banner__text-section --container">
-            <h1 class="main-banner__title">Дякуемо за замовлення</h1>
+            <h1 class="main-banner__title">Спасибо за заказ</h1>
             <p class="main-banner__description">
-                 Ваше замовлення прийнято. <br>У разi необхiдностi, наш менеджер зателефонує вам
+                 Ваш заказ №<span id="orderId"></span>, успешно оформлен. <br>Итого: <span id="orderAmount"></span> грн.
             </p>
-            <a href="/" class="catalog__header-price">Повернутися на головну</a>
+
+            <a href="/" class="order-pay_button" id="payButton" target="blanc">Перейти к оплате</a>
+            <a href="/" class="order-back_button">Повернутися на головну</a>
         </div>
 <!--        <div class="main-banner__kod-bg"></div>-->
         <div class="main-banner__weed-left">
@@ -68,6 +70,25 @@
 
     </div>
 
-
-
 </div>
+
+<script>
+    let getParams = window.location.search;
+    let merchantUrl = 'https://www.liqpay.ua/api/3/checkout';
+    let paymentUrl = merchantUrl + getParams;
+
+    function getGet(name) {
+        var s = getParams;
+        s = s.match(new RegExp(name + '=([^&=]+)'));
+        return s ? s[1] : false;
+    }
+    
+    let orderInfo = JSON.parse(atob(getGet('data')));
+    document.getElementById("orderId").innerHTML = orderInfo.order_id
+    document.getElementById("orderAmount").innerHTML = orderInfo.amount
+    console.log(orderInfo);
+    document.getElementById('payButton').href = ("https://www.liqpay.ua/api/3/checkout"+ getParams);
+
+
+
+</script>

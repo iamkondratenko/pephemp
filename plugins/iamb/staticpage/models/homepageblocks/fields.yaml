@@ -1,0 +1,58 @@
+fields:
+    section1:
+        label: 'Первый блок'
+        span: full
+        type: section
+    adv_picture_1:
+        label: Картинка
+        mode: file
+        span: auto
+        type: mediafinder
+    adv_title_1:
+        label: Заголовок
+        span: right
+        type: text
+    adv_text_1:
+        label: Текст
+        size: huge
+        mode: tab
+        span: right
+        type: markdown
+    section2:
+        label: 'Второй блок'
+        span: full
+        type: section
+    adv_title_2:
+        label: Заголовок
+        span: auto
+        type: text
+    adv_picture_2:
+        label: Картинка
+        mode: file
+        span: auto
+        type: mediafinder
+    adv_text_2:
+        label: Текст
+        size: huge
+        mode: tab
+        span: auto
+        type: markdown
+    section3:
+        label: 'Третий блок'
+        span: full
+        type: section
+    adv_picture_3:
+        label: Картинка
+        mode: file
+        span: auto
+        type: mediafinder
+    adv_title_3:
+        label: Заголовок
+        span: auto
+        type: text
+    adv_text_3:
+        label: Текст
+        span: right
+        size: huge
+        mode: tab
+        type: markdown

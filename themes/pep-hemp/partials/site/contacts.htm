@@ -1,0 +1,26 @@
+[builderDetails contact]
+modelClass = "iamb\StaticPage\Models\ContactPage"
+identifierValue = "contacts"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Record not found"
+==
+{% set record = contact.record %}
+{% set displayColumn = contact.displayColumn %}
+{% set notFoundMessage = contact.notFoundMessage %}
+
+{% if record %}
+    <div class="contacts  --container">
+          <div class="contacts__text">
+              <h3 class="contacts__title">{{ record.title }}</h1>
+              <p>
+                  {{ record.text|raw }}
+              </p>
+          </div>
+          <div class="contacts__map">
+            {{ record.map|raw }}
+          </div>
+    </div>
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

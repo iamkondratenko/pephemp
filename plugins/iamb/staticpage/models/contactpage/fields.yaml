@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: Заголовок
+        span: auto
+        type: text
+    map:
+        label: 'Код карты'
+        size: large
+        span: auto
+        type: richeditor
+    text:
+        label: Текст
+        size: giant
+        span: left
+        type: richeditor
+    slug:
+        label: ссылка
+        span: left
+        preset:
+            field: title
+            type: slug
+        type: text

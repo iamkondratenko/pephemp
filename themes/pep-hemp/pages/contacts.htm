@@ -1,0 +1,13 @@
+title = "Контакты"
+url = "/contacts"
+layout = "default"
+is_hidden = 0
+==
+
+{% put title %}
+    {% default %} {{ this.page.title }}
+{% endput %}
+
+<div id="App">
+    {% partial 'site/contacts' %}
+</div>

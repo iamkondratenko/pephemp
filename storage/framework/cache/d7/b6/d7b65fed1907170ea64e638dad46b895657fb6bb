@@ -1,4 +1,4 @@
-1597732099a:1:{s:8:"blog.htm";a:9:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:191:"title = "Блог"
+1597967475a:1:{s:8:"blog.htm";a:9:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:191:"title = "Блог"
 url = "/blog"
 layout = "default"
 is_hidden = 0
@@ -10,7 +10,7 @@ is_hidden = 0
 
 <div id="App">
     {% partial 'blog/blog' %}
-</div>";s:5:"mtime";i:1597694458;s:6:"markup";s:121:"{% put title %}
+</div>";s:5:"mtime";i:1597844296;s:6:"markup";s:121:"{% put title %}
     {% default %} {{ this.page.title }}
 {% endput %}
 

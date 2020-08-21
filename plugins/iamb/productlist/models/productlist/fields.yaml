@@ -30,12 +30,12 @@ fields:
         type: number
     description:
         label: 'Краткое описание'
-        size: small
+        size: large
         span: left
         type: richeditor
     text:
-        label: 'Полное описание'
-        size: huge
+        label: Текст
+        size: giant
         span: left
         type: richeditor
 tabs:

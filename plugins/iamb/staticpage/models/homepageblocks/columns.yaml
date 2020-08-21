@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    adv_title_1:
+        label: adv_title_1
+        type: text
+    adv_title_2:
+        label: adv_title_2
+        type: text
+    adv_title_3:
+        label: adv_title_3
+        type: text
