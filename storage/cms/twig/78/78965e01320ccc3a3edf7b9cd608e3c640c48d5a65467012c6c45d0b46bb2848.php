@@ -187,7 +187,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
 
 
 
-                    <form class=\"ordering-form\">
+                    <div class=\"ordering-form\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
@@ -210,17 +210,17 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             </div>
                         </div>
                         <div class=\"form-fields\">
-                            <h4 class=\"form-fields__title\">Доставка и оплата</h4>
+                            <h4 class=\"form-fields__title\">Доставка</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
                                     <div class=\"label-field__ordering-form\">Город:</div>
-                                    <input type=\"text\" name=\"city\" list=\"cityList\" class=\"ordering-field cityList\" required>
+                                    <input type=\"text\" name=\"city-title\" list=\"cityList\" class=\"ordering-field cityList\" required>
                                     <datalist id=\"cityList\">
 
                                     </datalist>
                                 </div>
                                 <div class=\"form-field radio-delivery-fields\">
-                                    <div class=\"label-field__ordering-form\">Тип доставки:</div>
+                                    <div class=\"label-field__ordering-form\">Доставка:</div>
                                     <div class=\"input-fields\">
                                         <div class=\"radio__input-field\">
                                             <input class=\"ordering-field radio-delivery-field\" name=\"delivery\" value=\"novaposhta\" type=\"radio\" id=\"novaposhta\"><label class=\"label__form-field\" for=\"novaposhta\" checked>Нова Пошта</label>
@@ -244,7 +244,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             <h3 class=\"modals__cart__section__title\">Всего:&nbsp;<div class=\"order_total_count\"></div></h3>
                             <button class=\"order-button\" onclick=\"ordering()\">Оформить заказ</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -412,7 +412,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
 
 
 
-                    <form class=\"ordering-form\">
+                    <div class=\"ordering-form\">
                         <div class=\"form-fields\">
                             <h4 class=\"form-fields__title\">Персональные данные</h4>
                             <div class=\"field-set\">
@@ -435,17 +435,17 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             </div>
                         </div>
                         <div class=\"form-fields\">
-                            <h4 class=\"form-fields__title\">Доставка и оплата</h4>
+                            <h4 class=\"form-fields__title\">Доставка</h4>
                             <div class=\"field-set\">
                                 <div class=\"form-field first-name\">
                                     <div class=\"label-field__ordering-form\">Город:</div>
-                                    <input type=\"text\" name=\"city\" list=\"cityList\" class=\"ordering-field cityList\" required>
+                                    <input type=\"text\" name=\"city-title\" list=\"cityList\" class=\"ordering-field cityList\" required>
                                     <datalist id=\"cityList\">
 
                                     </datalist>
                                 </div>
                                 <div class=\"form-field radio-delivery-fields\">
-                                    <div class=\"label-field__ordering-form\">Тип доставки:</div>
+                                    <div class=\"label-field__ordering-form\">Доставка:</div>
                                     <div class=\"input-fields\">
                                         <div class=\"radio__input-field\">
                                             <input class=\"ordering-field radio-delivery-field\" name=\"delivery\" value=\"novaposhta\" type=\"radio\" id=\"novaposhta\"><label class=\"label__form-field\" for=\"novaposhta\" checked>Нова Пошта</label>
@@ -469,7 +469,7 @@ class __TwigTemplate_30c0cad23050f7c61408ecd1494f111bd31c21ada8c64c6b1fb685d6edc
                             <h3 class=\"modals__cart__section__title\">Всего:&nbsp;<div class=\"order_total_count\"></div></h3>
                             <button class=\"order-button\" onclick=\"ordering()\">Оформить заказ</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

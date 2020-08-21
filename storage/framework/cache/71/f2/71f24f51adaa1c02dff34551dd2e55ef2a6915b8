@@ -1,4 +1,4 @@
-1597848218a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:20019:"
+1597967476a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:20000:"
 ==
 <div id="App-footer">
         <div class="subscribe-section">
@@ -144,7 +144,7 @@
 
 
 
-                    <form class="ordering-form">
+                    <div class="ordering-form">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>
                             <div class="field-set">
@@ -167,17 +167,17 @@
                             </div>
                         </div>
                         <div class="form-fields">
-                            <h4 class="form-fields__title">Доставка и оплата</h4>
+                            <h4 class="form-fields__title">Доставка</h4>
                             <div class="field-set">
                                 <div class="form-field first-name">
                                     <div class="label-field__ordering-form">Город:</div>
-                                    <input type="text" name="city" list="cityList" class="ordering-field cityList" required>
+                                    <input type="text" name="city-title" list="cityList" class="ordering-field cityList" required>
                                     <datalist id="cityList">
 
                                     </datalist>
                                 </div>
                                 <div class="form-field radio-delivery-fields">
-                                    <div class="label-field__ordering-form">Тип доставки:</div>
+                                    <div class="label-field__ordering-form">Доставка:</div>
                                     <div class="input-fields">
                                         <div class="radio__input-field">
                                             <input class="ordering-field radio-delivery-field" name="delivery" value="novaposhta" type="radio" id="novaposhta"><label class="label__form-field" for="novaposhta" checked>Нова Пошта</label>
@@ -201,12 +201,12 @@
                             <h3 class="modals__cart__section__title">Всего:&nbsp;<div class="order_total_count"></div></h3>
                             <button class="order-button" onclick="ordering()">Оформить заказ</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-";s:5:"mtime";i:1597844521;s:6:"markup";s:20014:"<div id="App-footer">
+";s:5:"mtime";i:1597965256;s:6:"markup";s:19995:"<div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
                 <h3 class="subscribe-section__title">Задать вопрос</h3>
@@ -350,7 +350,7 @@
 
 
 
-                    <form class="ordering-form">
+                    <div class="ordering-form">
                         <div class="form-fields">
                             <h4 class="form-fields__title">Персональные данные</h4>
                             <div class="field-set">
@@ -373,17 +373,17 @@
                             </div>
                         </div>
                         <div class="form-fields">
-                            <h4 class="form-fields__title">Доставка и оплата</h4>
+                            <h4 class="form-fields__title">Доставка</h4>
                             <div class="field-set">
                                 <div class="form-field first-name">
                                     <div class="label-field__ordering-form">Город:</div>
-                                    <input type="text" name="city" list="cityList" class="ordering-field cityList" required>
+                                    <input type="text" name="city-title" list="cityList" class="ordering-field cityList" required>
                                     <datalist id="cityList">
 
                                     </datalist>
                                 </div>
                                 <div class="form-field radio-delivery-fields">
-                                    <div class="label-field__ordering-form">Тип доставки:</div>
+                                    <div class="label-field__ordering-form">Доставка:</div>
                                     <div class="input-fields">
                                         <div class="radio__input-field">
                                             <input class="ordering-field radio-delivery-field" name="delivery" value="novaposhta" type="radio" id="novaposhta"><label class="label__form-field" for="novaposhta" checked>Нова Пошта</label>
@@ -407,7 +407,7 @@
                             <h3 class="modals__cart__section__title">Всего:&nbsp;<div class="order_total_count"></div></h3>
                             <button class="order-button" onclick="ordering()">Оформить заказ</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

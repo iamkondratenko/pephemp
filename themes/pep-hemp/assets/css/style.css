@@ -537,6 +537,39 @@ h2.section-adv__container__text-block__title {
     font-weight: 700;
 }
 
+
+a.order-pay_button {
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    /*border: 2px solid #383838;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 41, 60);
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+a.order-back_button {
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
 .catalog-homepage__filter {
     height: 400px;
     position: sticky;
@@ -1011,7 +1044,7 @@ button.subscribe-section__subscribe-button {
     height: 50px;
     background: none;
     border: 2px solid #fff;
-    border-radius: 25px;
+    border-radius: 12px;
     text-align: center;
     font-size: 16px;
     color: #fff;
@@ -1019,6 +1052,21 @@ button.subscribe-section__subscribe-button {
     cursor: pointer;
     margin: 16px auto;
 }
+
+a.secondary-button {
+    width: 300px;
+    height: 50px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 16px auto;
+}
+
 
 footer.main-footer {
     background-color: #272727;
@@ -1336,4 +1384,14 @@ input.ordering-field:checked + .label__form-field {
   border: none;
   border-radius: 25px;
   padding: 16px;
+}
+
+.order__title {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 48px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    max-width: 1080px;
 }

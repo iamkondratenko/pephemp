@@ -471,21 +471,22 @@ function openOrdering() {
 function checkCity() {
     let deliveryType = document.querySelector('.ordering-field.cityList');
 
-    deliveryType.addEventListener('change', function () {
-        if (deliveryType.value.replace('.', ',').split(',')[1]) {
-            gettingDepByCity(deliveryType.value.replace('.', ',').split(',')[1].replace(' ', ''))
+    deliveryType.addEventListener('input', function () {
+        if (deliveryType.value.length > 2) {
+            gettingDepByCity(deliveryType.value)
+            console.log(deliveryType.value);
         }
     })
 
     deliveryType.addEventListener('input', function () {
 
 
-        if (deliveryType.value.length == 2 || deliveryType.value.length == 4) {
+        if (deliveryType.value.length >= 2) {
 
             gettingCityByPattern(deliveryType.value)
         }
         document.querySelector('.form-field.radio-delivery-fields').classList.add('radio-delivery-fields__is-showing')
-        if (deliveryType.value.toLowerCase() != 'киев' && deliveryType.value.toLowerCase() != "м. Київ, Київська обл.".toLowerCase()) {
+        if (deliveryType.value.toLowerCase() != 'киев' && deliveryType.value.toLowerCase() != "Київ".toLowerCase()) {
             document.querySelector('.radio__input-field.delivery-pickpoint').classList.add('delivery-type-is-hiding')
             
         } else {
@@ -517,6 +518,8 @@ function typeOfDelivery() {
 
 /* Getting city */
 
+
+
 function gettingCityByPattern(pattern) {
 
 
@@ -528,44 +531,32 @@ function gettingCityByPattern(pattern) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "apiKey": "bc3abcc11dd1a541d94c76526642726d",
-                "modelName": "AddressGeneral",
-                "calledMethod": "searchSettlements",
+                "modelName": "Address",
+                "calledMethod": "getCities",
                 "methodProperties": {
-                    "CityName": pattern,
-                    "Limit": 5
-                }
+                    "FindByString": pattern
+                },
+                "apiKey": "bc3abcc11dd1a541d94c76526642726d"
             })
         });
         const content = await rawResponse.json();
-        const sugestedCities = content.data[0].Addresses;
+        const sugestedCities = content.data;
 
-        var gettedCity = []
-        for (const city of sugestedCities) {
+
 
             var cityNode = []
 
-
-            gettedCity.push(city.Present)
 
 
             let cityList = document.getElementById('cityList');
 
             for (const cityTitle of sugestedCities) {
-                cityNode.push('<option class="city-item" value="' + cityTitle.Present + '" data-ref="' + cityTitle.Ref + '">')
-
+                cityNode.push('<option class="city-item" value="' + cityTitle.Description + '" data-ref="' + cityTitle.Ref + '">')
+                console.log(cityTitle.Description);
             }
-
-
-            cityList.innerHTML = cityNode.join('')
-
-
-
-
-        }
-
-
-
+                console.log(cityNode.join(''));
+           
+                cityList.innerHTML = cityNode.join('')
 
 
 
@@ -573,6 +564,55 @@ function gettingCityByPattern(pattern) {
 
 
 }
+
+
+
+// function gettingCityByPattern(pattern) {
+
+
+//     (async () => {
+//         const rawResponse = await fetch('https://api.novaposhta.ua/v2.0/json/', {
+//             method: 'POST',
+//             headers: {
+//                 'Accept': 'application/json',
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({
+//                 "apiKey": "bc3abcc11dd1a541d94c76526642726d",
+//                 "modelName": "AddressGeneral",
+//                 "calledMethod": "searchSettlements",
+//                 "methodProperties": {
+//                     "CityName": pattern,
+//                     "Limit": 5
+//                 }
+//             })
+//         });
+//         const content = await rawResponse.json();
+//         const sugestedCities = content.data[0].Addresses;
+
+
+
+//             var cityNode = []
+
+
+//             let cityList = document.getElementById('cityList');
+
+//             for (const cityTitle of sugestedCities) {
+//                 cityNode.push('<option class="city-item" value="' + cityTitle.Present + '" data-ref="' + cityTitle.Ref + '">')
+//                 console.log(cityTitle.Present);
+//             }
+
+//             if (cityNode.length > 1) {
+//                 cityList.innerHTML = cityNode.join('')
+//             } else {
+//                 cityList.innerHTML = ''
+//             }
+
+
+//     })();
+
+
+// }
 
 
 /* Getting dep */
@@ -589,21 +629,19 @@ function gettingDepByCity(pattern) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "modelName": "AddressGeneral",
-                "calledMethod": "getWarehouses",
-                "methodProperties": {
-                    "Language": "ru",
-                    "CityName": pattern.toString()
-                },
-                "apiKey": "bc3abcc11dd1a541d94c76526642726d"
-            })
+    "modelName": "AddressGeneral",
+    "calledMethod": "getWarehouses",
+    "methodProperties": {
+        "CityName": pattern
+    },
+    "apiKey": "bc3abcc11dd1a541d94c76526642726d"
+})
         });
         const content = await rawResponse.json();
 
 
         const sugestedDep = content.data;
 
-        for (const dep of sugestedDep) {
 
             var depNode = []
 
@@ -615,18 +653,14 @@ function gettingDepByCity(pattern) {
                 depNode.push('<option class="city-dep-item" value="' + sugestedDep[i].Description + '" >')
             }
 
-            // for (const depTitle of sugestedDep) {
-            //     depNode.push('<option class="city-dep-item" value="' + depTitle.Description + '" >')
-            // }
 
             depList.innerHTML = depNode.join('')
 
 
 
 
-        }
 
-        console.log(depNode)
+        console.log('Finish')
 
 
 
@@ -643,13 +677,14 @@ function gettingDepByCity(pattern) {
 }
 
 
-function ordering() {
+function ordering(e) {
+
 
   let first_name = document.querySelector("input[name=first_name]").value;
   let last_name = document.querySelector("input[name=last_name]").value;
   let email = document.querySelector("input[name=order_email]").value;
   let phone = document.querySelector("input[name=phone]").value;
-  let city = document.querySelector("input[name=city]").value;
+  let city = document.querySelector("input[name=city-title]").value;
   let department = document.querySelector("input[name=department]").value;
 
 
@@ -700,7 +735,7 @@ xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
-    // document.location.replace('/thankyoupage');
+    document.location.replace(this.responseText);
   }
 });
 

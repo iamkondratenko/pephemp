@@ -62,7 +62,7 @@ class __TwigTemplate_6a3c4d4d40128db946b6b1116eab9012c529ba4b4773eaceb4ed425682d
     public function getSourceContext()
     {
         return new Source("<div id=\"App\">
-{% partial 'thankyou' %}
+{% partial 'thankyou'%}
 </div>", "/Users/alexkondratenko/git/pep-hemp/themes/pep-hemp/pages/thankyoupage.htm", "");
     }
 }

@@ -1,10 +1,10 @@
-1597848217a:1:{s:16:"thankyoupage.htm";a:8:{s:8:"fileName";s:16:"thankyoupage.htm";s:7:"content";s:115:"title = "Demonstration"
+1597967475a:1:{s:16:"thankyoupage.htm";a:8:{s:8:"fileName";s:16:"thankyoupage.htm";s:7:"content";s:114:"title = "Demonstration"
 url = "/thankyoupage"
 layout = "default"
 ==
 <div id="App">
-{% partial 'thankyou' %}
+{% partial 'thankyou'%}
 </div>
-";s:5:"mtime";i:1597844296;s:6:"markup";s:46:"<div id="App">
-{% partial 'thankyou' %}
+";s:5:"mtime";i:1597950892;s:6:"markup";s:45:"<div id="App">
+{% partial 'thankyou'%}
 </div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:13:"/thankyoupage";s:6:"layout";s:7:"default";}}

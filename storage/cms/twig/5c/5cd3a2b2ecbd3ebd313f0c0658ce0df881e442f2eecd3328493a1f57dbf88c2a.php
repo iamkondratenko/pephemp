@@ -39,53 +39,55 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
     <div class=\"main-banner\" data-bannerid=\"bid\">
 
         <div class=\"main-banner__text-section --container\">
-            <h1 class=\"main-banner__title\">Дякуемо за замовлення</h1>
+            <h1 class=\"main-banner__title\">Спасибо за заказ</h1>
             <p class=\"main-banner__description\">
-                 Ваше замовлення прийнято. <br>У разi необхiдностi, наш менеджер зателефонує вам
+                 Ваш заказ №<span id=\"orderId\"></span>, успешно оформлен. <br>Итого: <span id=\"orderAmount\"></span> грн.
             </p>
-            <a href=\"/\" class=\"catalog__header-price\">Повернутися на головну</a>
+
+            <a href=\"/\" class=\"order-pay_button\" id=\"payButton\" target=\"blanc\">Перейти к оплате</a>
+            <a href=\"/\" class=\"order-back_button\">Повернутися на головну</a>
         </div>
 <!--        <div class=\"main-banner__kod-bg\"></div>-->
         <div class=\"main-banner__weed-left\">
 
             <div class=\"weed-right__root --weed-right__img\">
                 <img class=\"weed-right__root__img --root__img\" src=\"";
-        // line 16
+        // line 18
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/root.png?123");
         echo "\">
             </div>
 
             <div class=\"weed-right__1st --weed-right__img\">
                 <img class=\"weed-right__1st__img --root__img\" src=\"";
-        // line 20
+        // line 22
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/1.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__2nd --weed-right__img\">
                 <img class=\"weed-right__2nd__img --root__img\" src=\"";
-        // line 24
+        // line 26
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/2.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__3rd --weed-right__img\">
                 <img class=\"weed-right__3rd__img --root__img\" src=\"";
-        // line 28
+        // line 30
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/3.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__4th --weed-right__img\">
                 <img class=\"weed-right__4th__img --root__img\" src=\"";
-        // line 32
+        // line 34
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/4.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__5th --weed-right__img\">
                 <img class=\"weed-right__5th__img --root__img\" src=\"";
-        // line 36
+        // line 38
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/5.png");
         echo "\">
             </div>
@@ -95,42 +97,42 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
 
             <div class=\"weed-right__root --weed-right__img\">
                 <img class=\"weed-right__root__img --root__img\" src=\"";
-        // line 43
+        // line 45
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/root.png?234");
         echo "\">
             </div>
 
             <div class=\"weed-right__1st --weed-right__img\">
                 <img class=\"weed-right__1st__img --root__img\" src=\"";
-        // line 47
+        // line 49
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/1.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__2nd --weed-right__img\">
                 <img class=\"weed-right__2nd__img --root__img\" src=\"";
-        // line 51
+        // line 53
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/2.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__3rd --weed-right__img\">
                 <img class=\"weed-right__3rd__img --root__img\" src=\"";
-        // line 55
+        // line 57
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/3.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__4th --weed-right__img\">
                 <img class=\"weed-right__4th__img --root__img\" src=\"";
-        // line 59
+        // line 61
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/4.png");
         echo "\">
             </div>
 
             <div class=\"weed-right__5th --weed-right__img\">
                 <img class=\"weed-right__5th__img --root__img\" src=\"";
-        // line 63
+        // line 65
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/weed/5.png");
         echo "\">
             </div>
@@ -140,9 +142,28 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
 
     </div>
 
+</div>
+
+<script>
+    let getParams = window.location.search;
+    let merchantUrl = 'https://www.liqpay.ua/api/3/checkout';
+    let paymentUrl = merchantUrl + getParams;
+
+    function getGet(name) {
+        var s = getParams;
+        s = s.match(new RegExp(name + '=([^&=]+)'));
+        return s ? s[1] : false;
+    }
+    
+    let orderInfo = JSON.parse(atob(getGet('data')));
+    document.getElementById(\"orderId\").innerHTML = orderInfo.order_id
+    document.getElementById(\"orderAmount\").innerHTML = orderInfo.amount
+    console.log(orderInfo);
+    document.getElementById('payButton').href = (\"https://www.liqpay.ua/api/3/checkout\"+ getParams);
 
 
-</div>";
+
+</script>";
     }
 
     public function getTemplateName()
@@ -157,7 +178,7 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
 
     public function getDebugInfo()
     {
-        return array (  134 => 63,  127 => 59,  120 => 55,  113 => 51,  106 => 47,  99 => 43,  89 => 36,  82 => 32,  75 => 28,  68 => 24,  61 => 20,  54 => 16,  37 => 1,);
+        return array (  136 => 65,  129 => 61,  122 => 57,  115 => 53,  108 => 49,  101 => 45,  91 => 38,  84 => 34,  77 => 30,  70 => 26,  63 => 22,  56 => 18,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -167,11 +188,13 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
     <div class=\"main-banner\" data-bannerid=\"bid\">
 
         <div class=\"main-banner__text-section --container\">
-            <h1 class=\"main-banner__title\">Дякуемо за замовлення</h1>
+            <h1 class=\"main-banner__title\">Спасибо за заказ</h1>
             <p class=\"main-banner__description\">
-                 Ваше замовлення прийнято. <br>У разi необхiдностi, наш менеджер зателефонує вам
+                 Ваш заказ №<span id=\"orderId\"></span>, успешно оформлен. <br>Итого: <span id=\"orderAmount\"></span> грн.
             </p>
-            <a href=\"/\" class=\"catalog__header-price\">Повернутися на головну</a>
+
+            <a href=\"/\" class=\"order-pay_button\" id=\"payButton\" target=\"blanc\">Перейти к оплате</a>
+            <a href=\"/\" class=\"order-back_button\">Повернутися на головну</a>
         </div>
 <!--        <div class=\"main-banner__kod-bg\"></div>-->
         <div class=\"main-banner__weed-left\">
@@ -232,8 +255,27 @@ class __TwigTemplate_9b6bb6df5f54686ece5b47901cc7b82409df0a2e0f756c61dce07a6a41a
 
     </div>
 
+</div>
+
+<script>
+    let getParams = window.location.search;
+    let merchantUrl = 'https://www.liqpay.ua/api/3/checkout';
+    let paymentUrl = merchantUrl + getParams;
+
+    function getGet(name) {
+        var s = getParams;
+        s = s.match(new RegExp(name + '=([^&=]+)'));
+        return s ? s[1] : false;
+    }
+    
+    let orderInfo = JSON.parse(atob(getGet('data')));
+    document.getElementById(\"orderId\").innerHTML = orderInfo.order_id
+    document.getElementById(\"orderAmount\").innerHTML = orderInfo.amount
+    console.log(orderInfo);
+    document.getElementById('payButton').href = (\"https://www.liqpay.ua/api/3/checkout\"+ getParams);
 
 
-</div>", "/Users/alexkondratenko/git/pep-hemp/themes/pep-hemp/partials/thankyou.htm", "");
+
+</script>", "/Users/alexkondratenko/git/pep-hemp/themes/pep-hemp/partials/thankyou.htm", "");
     }
 }

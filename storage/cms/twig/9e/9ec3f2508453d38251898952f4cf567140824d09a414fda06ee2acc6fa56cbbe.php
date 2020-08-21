@@ -61,7 +61,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link href=\"";
         // line 14
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css?fgg23ffffhgffff4ffdf");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css?fgg23ffffhgfffffff4ffdf");
         echo "\" rel=\"stylesheet\">
         ";
         // line 15
@@ -98,25 +98,28 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         // line 25
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 26
+        echo "            ";
+        echo twig_escape_filter($this->env, ($context["test"] ?? null), "html", null, true);
         echo "
+
         <!-- Footer -->
             ";
-        // line 28
+        // line 29
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 29
+        // line 30
         echo "
         <!-- Scripts -->
         <script src=\"";
-        // line 31
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js?2ffffgаfff3fcf");
+        // line 32
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js?2ffffffffffffffffffffffffffffffffffffffffgаfff3fcf");
         echo "\"></script>
         ";
-        // line 32
+        // line 33
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 33
+        // line 34
         echo "
     </body>
 </html>";
@@ -134,7 +137,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
 
     public function getDebugInfo()
     {
-        return array (  120 => 33,  117 => 32,  113 => 31,  109 => 29,  105 => 28,  101 => 26,  99 => 25,  95 => 23,  91 => 22,  85 => 18,  74 => 17,  71 => 16,  68 => 15,  64 => 14,  57 => 10,  53 => 9,  50 => 8,  48 => 7,  46 => 8,  45 => 7,  37 => 1,);
+        return array (  123 => 34,  120 => 33,  116 => 32,  112 => 30,  108 => 29,  101 => 26,  99 => 25,  95 => 23,  91 => 22,  85 => 18,  74 => 17,  71 => 16,  68 => 15,  64 => 14,  57 => 10,  53 => 9,  50 => 8,  48 => 7,  46 => 8,  45 => 7,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -152,7 +155,7 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link href=\"{{ 'assets/css/style.css?fgg23ffffhgffff4ffdf'|theme }}\" rel=\"stylesheet\">
+        <link href=\"{{ 'assets/css/style.css?fgg23ffffhgfffffff4ffdf'|theme }}\" rel=\"stylesheet\">
         {% styles %}
         <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" integrity=\"sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=\" crossorigin=\"anonymous\"></script>
         {% framework extras %}
@@ -164,12 +167,13 @@ class __TwigTemplate_3d75969a1129bde37466d9f08c2f47e7d459999b8313195d3071e27a4f7
 
         <!-- Content -->
             {% page %}
+            {{ test }}
 
         <!-- Footer -->
             {% partial 'site/footer' %}
 
         <!-- Scripts -->
-        <script src=\"{{ 'assets/javascript/app.js?2ffffgаfff3fcf'|theme }}\"></script>
+        <script src=\"{{ 'assets/javascript/app.js?2ffffffffffffffffffffffffffffffffffffffffgаfff3fcf'|theme }}\"></script>
         {% scripts %}
 
     </body>
