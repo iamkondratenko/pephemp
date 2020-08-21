@@ -56,6 +56,6 @@ fields:
                     span: auto
                     type: number
     total_price:
-        label: 'К оплате'
+        label: Цена
         span: auto
         type: text
