@@ -1,4 +1,4 @@
-1598049334a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:20000:"
+1598889270a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:20000:"
 ==
 <div id="App-footer">
         <div class="subscribe-section">
@@ -206,7 +206,7 @@
             </div>
         </div>
     </div>
-";s:5:"mtime";i:1597965256;s:6:"markup";s:19995:"<div id="App-footer">
+";s:5:"mtime";i:1598856242;s:6:"markup";s:19995:"<div id="App-footer">
         <div class="subscribe-section">
             <div class="subscribe-section__text">
                 <h3 class="subscribe-section__title">Задать вопрос</h3>
