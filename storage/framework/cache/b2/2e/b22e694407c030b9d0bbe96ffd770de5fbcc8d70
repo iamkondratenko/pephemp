@@ -1,4 +1,4 @@
-1598889282a:1:{s:16:"site/bullets.htm";a:6:{s:8:"fileName";s:16:"site/bullets.htm";s:7:"content";s:9522:"[builderDetails bullets]
+1598969134a:1:{s:16:"site/bullets.htm";a:6:{s:8:"fileName";s:16:"site/bullets.htm";s:7:"content";s:9522:"[builderDetails bullets]
 modelClass = "iamb\StaticPage\Models\HomePageBlocks"
 identifierValue = "1"
 modelKeyColumn = "id"

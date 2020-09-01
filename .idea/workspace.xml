@@ -20,36 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28981c2a-0b34-4403-aac2-c798a76c62f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/plugins/iamb/productlist/models/ProductList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iamb/productlist/models/ProductList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iamb/productlist/models/productlist/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iamb/productlist/models/productlist/fields.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iamb/productlist/updates/version.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iamb/productlist/updates/version.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/11/de/11de31e1eabb2682cf62ee9c9ccb0630f1019006" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/11/de/11de31e1eabb2682cf62ee9c9ccb0630f1019006" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/1d/7c/1d7c84cbdac8a9203d4781142069e8103a496dec" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/1d/7c/1d7c84cbdac8a9203d4781142069e8103a496dec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/22/43/2243f500ae1632e1e609a9d4d08e7bad65800071" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/22/43/2243f500ae1632e1e609a9d4d08e7bad65800071" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/25/b6/25b64ad3a641a30554616015a33e60e415998312" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/25/b6/25b64ad3a641a30554616015a33e60e415998312" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/32/f6/32f67f0752fcf00fe8a281617b904a664bf87c31" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/32/f6/32f67f0752fcf00fe8a281617b904a664bf87c31" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/64/1c/641c8e52fbb6c43a9a7d3ccb1b9f62a258a9cad9" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/64/1c/641c8e52fbb6c43a9a7d3ccb1b9f62a258a9cad9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/67/b9/67b9f5eb827304213d7083881fca9b1940e8b774" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/67/b9/67b9f5eb827304213d7083881fca9b1940e8b774" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/71/54/715406a442aefe27f5c6bd005c501bfab709d17c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/71/54/715406a442aefe27f5c6bd005c501bfab709d17c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/71/f2/71f24f51adaa1c02dff34551dd2e55ef2a6915b8" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/71/f2/71f24f51adaa1c02dff34551dd2e55ef2a6915b8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/72/4d/724d64623b82cdd367a46a1a3611b8fce75faedf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/72/4d/724d64623b82cdd367a46a1a3611b8fce75faedf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/76/8b/768b5a86e5cbfec3d00227119967eb74d067a6be" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/76/8b/768b5a86e5cbfec3d00227119967eb74d067a6be" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/77/61/77616e1c5e0d202cb4cf522bddafaebf56f27660" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/77/61/77616e1c5e0d202cb4cf522bddafaebf56f27660" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/7f/38/7f388956253c9f1379e1bb65b4d948f28c64f3ae" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/7f/38/7f388956253c9f1379e1bb65b4d948f28c64f3ae" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/8e/34/8e3426cf59a2af00231388562fc4736c9d90e506" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/8e/34/8e3426cf59a2af00231388562fc4736c9d90e506" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/97/37/9737833e426f53b3dcb4d98fdcb68c76762765de" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/97/37/9737833e426f53b3dcb4d98fdcb68c76762765de" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/a0/c9/a0c910eb995ad1e9281e5bb05187281e039e242f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/a0/c9/a0c910eb995ad1e9281e5bb05187281e039e242f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/a5/13/a51391a98f2c73795f28fb3c02c4b25f2744fb0f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/a5/13/a51391a98f2c73795f28fb3c02c4b25f2744fb0f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/b2/2e/b22e694407c030b9d0bbe96ffd770de5fbcc8d70" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/b2/2e/b22e694407c030b9d0bbe96ffd770de5fbcc8d70" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/b3/d9/b3d918d3f1270f635baed3bf0aba03ef4341423d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/b3/d9/b3d918d3f1270f635baed3bf0aba03ef4341423d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/bf/2e/bf2e57f9de778504d1bf9030be50e1668331668d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/bf/2e/bf2e57f9de778504d1bf9030be50e1668331668d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/c3/f8/c3f82a7aec576624978cc7b3e051bbbb4e17fa20" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/c3/f8/c3f82a7aec576624978cc7b3e051bbbb4e17fa20" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/d7/b6/d7b65fed1907170ea64e638dad46b895657fb6bb" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/d7/b6/d7b65fed1907170ea64e638dad46b895657fb6bb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/e3/1d/e31d046fd7dd198edf0b1f83739e33e5ad5b83c1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/e3/1d/e31d046fd7dd198edf0b1f83739e33e5ad5b83c1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/f7/61/f7619ba5533d70e24392d47d90adc4e52734caf0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/f7/61/f7619ba5533d70e24392d47d90adc4e52734caf0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/system.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/pep-hemp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/pep-hemp/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/pep-hemp/assets/javascript/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/pep-hemp/assets/javascript/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/pep-hemp/layouts/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/themes/pep-hemp/layouts/default.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/pep-hemp/pages/product.htm" beforeDir="false" afterPath="$PROJECT_DIR$/themes/pep-hemp/pages/product.htm" afterDir="false" />
     </list>
@@ -76,7 +66,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -97,7 +87,7 @@
       <workItem from="1598883452865" duration="176000" />
       <workItem from="1598883742518" duration="27000" />
       <workItem from="1598883770787" duration="370000" />
-      <workItem from="1598884372127" duration="3074000" />
+      <workItem from="1598884372127" duration="6759000" />
     </task>
     <servers />
   </component>
@@ -114,5 +104,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Deployment" timestamp="1598968888751">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1598968888751" />
   </component>
 </project>

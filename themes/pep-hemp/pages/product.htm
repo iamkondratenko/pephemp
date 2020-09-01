@@ -78,8 +78,8 @@ notFoundMessage = "Record not found"
 
                 <div class="section-adv__container__content">
                     <div class="section-adv__container__text-block-right">
-                        <h2 class="section-adv__container__text-block__title">{{ item.additional_title }}
-                        </h2>
+                        <h3 class="section-adv__container__text-block__title">{{ item.additional_title }}
+                        </h3>
 
                         <p class="section-adv__container__text-block__description">
                             {{ item.additional_text|raw }}
@@ -112,14 +112,15 @@ notFoundMessage = "Record not found"
     }
 
     .section-adv__container__text-block__title {
-        text-align: center;
+        text-align: left;
     }
 
     .section-adv {
-        background-color: #1d1d1d;
-         height: auto;
-        min-height: 680px;
+        background-color: #242424;
+        height: auto;
+        min-height: 380px;
         padding-top: 60px;
+        padding-bottom: 20px;
     }
 
 </style>

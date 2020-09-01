@@ -1,4 +1,4 @@
-1598889563a:1:{s:11:"product.htm";a:11:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:3533:"title = "Product"
+1598969134a:1:{s:11:"product.htm";a:11:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:3560:"title = "Product"
 url = "/product/:slug"
 layout = "default"
 is_hidden = 0
@@ -78,8 +78,8 @@ notFoundMessage = "Record not found"
 
                 <div class="section-adv__container__content">
                     <div class="section-adv__container__text-block-right">
-                        <h2 class="section-adv__container__text-block__title">{{ item.additional_title }}
-                        </h2>
+                        <h3 class="section-adv__container__text-block__title">{{ item.additional_title }}
+                        </h3>
 
                         <p class="section-adv__container__text-block__description">
                             {{ item.additional_text|raw }}
@@ -112,18 +112,19 @@ notFoundMessage = "Record not found"
     }
 
     .section-adv__container__text-block__title {
-        text-align: center;
+        text-align: left;
     }
 
     .section-adv {
-        background-color: #1d1d1d;
-         height: auto;
-        min-height: 680px;
+        background-color: #242424;
+        height: auto;
+        min-height: 380px;
         padding-top: 60px;
+        padding-bottom: 20px;
     }
 
 </style>
-";s:5:"mtime";i:1598888961;s:6:"markup";s:3092:"<div id="App">
+";s:5:"mtime";i:1598914892;s:6:"markup";s:3119:"<div id="App">
 
 {% put title %}
     {% default %} {{ record.title }}
@@ -185,8 +186,8 @@ notFoundMessage = "Record not found"
 
                 <div class="section-adv__container__content">
                     <div class="section-adv__container__text-block-right">
-                        <h2 class="section-adv__container__text-block__title">{{ item.additional_title }}
-                        </h2>
+                        <h3 class="section-adv__container__text-block__title">{{ item.additional_title }}
+                        </h3>
 
                         <p class="section-adv__container__text-block__description">
                             {{ item.additional_text|raw }}
@@ -219,14 +220,15 @@ notFoundMessage = "Record not found"
     }
 
     .section-adv__container__text-block__title {
-        text-align: center;
+        text-align: left;
     }
 
     .section-adv {
-        background-color: #1d1d1d;
-         height: auto;
-        min-height: 680px;
+        background-color: #242424;
+        height: auto;
+        min-height: 380px;
         padding-top: 60px;
+        padding-bottom: 20px;
     }
 
 </style>";s:4:"code";N;s:5:"title";s:7:"Product";s:3:"url";s:14:"/product/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:29:"builderDetails productDetails";a:5:{s:10:"modelClass";s:35:"iamb\Productlist\Models\ProductList";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"slug";s:15:"notFoundMessage";s:16:"Record not found";}s:27:"builderDetails categoryList";a:4:{s:10:"modelClass";s:32:"iamb\Productlist\Models\MenuList";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"slug";s:15:"notFoundMessage";s:16:"Record not found";}}}

@@ -153,11 +153,11 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 
                 <div class=\"section-adv__container__content\">
                     <div class=\"section-adv__container__text-block-right\">
-                        <h2 class=\"section-adv__container__text-block__title\">";
+                        <h3 class=\"section-adv__container__text-block__title\">";
                 // line 63
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "additional_title", [], "any", false, false, false, 63), "html", null, true);
                 echo "
-                        </h2>
+                        </h3>
 
                         <p class=\"section-adv__container__text-block__description\">
                             ";
@@ -208,10 +208,11 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
     }
 
     .section-adv {
-        background-color: #1d1d1d;
-         height: auto;
-        min-height: 680px;
+        background-color: #242424;
+        height: auto;
+        min-height: 380px;
         padding-top: 60px;
+        padding-bottom: 20px;
     }
 
 </style>";
@@ -296,8 +297,8 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
 
                 <div class=\"section-adv__container__content\">
                     <div class=\"section-adv__container__text-block-right\">
-                        <h2 class=\"section-adv__container__text-block__title\">{{ item.additional_title }}
-                        </h2>
+                        <h3 class=\"section-adv__container__text-block__title\">{{ item.additional_title }}
+                        </h3>
 
                         <p class=\"section-adv__container__text-block__description\">
                             {{ item.additional_text|raw }}
@@ -334,10 +335,11 @@ class __TwigTemplate_c4820dbcdb028f8d80cea6ad023e7b40ce45b50d98632a0f8ec0e034112
     }
 
     .section-adv {
-        background-color: #1d1d1d;
-         height: auto;
-        min-height: 680px;
+        background-color: #242424;
+        height: auto;
+        min-height: 380px;
         padding-top: 60px;
+        padding-bottom: 20px;
     }
 
 </style>", "/Users/alexkondratenko/git/pep-hemp/themes/pep-hemp/pages/product.htm", "");
