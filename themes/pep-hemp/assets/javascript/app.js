@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+var browserWidth = document.body.clientWidth
+
 var browserHeight = document.body.clientHeight
 console.log(browserHeight)
 
@@ -422,21 +424,25 @@ if (gettingRouter() == 'product') {
 
 function setScrollForProduct(route) {
 
-    if (route == 'product') {
-        let textBlock = document.querySelector('.product-section__text-block-holder')
-        let photoBlock = document.querySelector('.photo-block__product-holder')
-        let textBlockHeight = textBlock.scrollHeight
-        let photoBlockHeight = photoBlock.scrollHeight
 
-        console.log(textBlockHeight, photoBlockHeight)
-        if (textBlockHeight >= photoBlockHeight) {
-            photoBlock.classList.add('float-scroll')
-            floatScrollBlock = photoBlock
-            floatScrollBlockHeight = photoBlockHeight
-        } else {
-            textBlock.classList.add('float-scroll')
-            floatScrollBlock = textBlock
-            floatScrollBlockHeight = textBlockHeight
+
+    if (browserWidth >  1080) {
+        if (route == 'product') {
+            let textBlock = document.querySelector('.product-section__text-block-holder')
+            let photoBlock = document.querySelector('.photo-block__product-holder')
+            let textBlockHeight = textBlock.scrollHeight
+            let photoBlockHeight = photoBlock.scrollHeight
+
+            console.log(textBlockHeight, photoBlockHeight)
+            if (textBlockHeight >= photoBlockHeight) {
+                photoBlock.classList.add('float-scroll')
+                floatScrollBlock = photoBlock
+                floatScrollBlockHeight = photoBlockHeight
+            } else {
+                textBlock.classList.add('float-scroll')
+                floatScrollBlock = textBlock
+                floatScrollBlockHeight = textBlockHeight
+            }
         }
     }
 

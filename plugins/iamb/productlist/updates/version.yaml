@@ -21,3 +21,9 @@
 1.0.8:
     - 'Created table iamb_productlist_catalog'
     - builder_table_create_iamb_productlist_catalog.php
+1.0.9:
+    - 'Updated table iamb_productlist_'
+    - builder_table_update_iamb_productlist__7.php
+1.0.10:
+    - 'Updated table iamb_productlist_'
+    - builder_table_update_iamb_productlist__8.php

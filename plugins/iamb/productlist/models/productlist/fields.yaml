@@ -40,66 +40,20 @@ fields:
         type: richeditor
 tabs:
     fields:
-        section1:
-            label: 'Первый блок'
-            span: full
-            type: section
-            tab: 'Дополнительные блоки'
-        first_additional_title:
-            label: Заголовок
+        additional:
+            label: 'Дополнительные блоки'
+            prompt: 'Добавить блок'
             span: left
-            type: text
+            type: repeater
             tab: 'Дополнительные блоки'
-        first_additional_pic:
-            label: Картинка
-            mode: image
-            span: right
-            type: mediafinder
-            tab: 'Дополнительные блоки'
-        first_additional_text:
-            label: Описание
-            span: left
-            type: text
-            tab: 'Дополнительные блоки'
-        section2:
-            label: 'Второй блок'
-            span: full
-            type: section
-            tab: 'Дополнительные блоки'
-        second_additional_pic:
-            label: Картинка
-            mode: image
-            span: left
-            type: mediafinder
-            tab: 'Дополнительные блоки'
-        second_additional_title:
-            label: Заголовок
-            span: auto
-            type: text
-            tab: 'Дополнительные блоки'
-        second_additional_text:
-            label: Описание
-            span: right
-            type: text
-            tab: 'Дополнительные блоки'
-        section3:
-            label: 'Третий блок'
-            span: full
-            type: section
-            tab: 'Дополнительные блоки'
-        third_additional_title:
-            label: Заголовок
-            span: auto
-            type: text
-            tab: 'Дополнительные блоки'
-        third_additional_pic:
-            label: Картинка
-            mode: image
-            span: right
-            type: mediafinder
-            tab: 'Дополнительные блоки'
-        third_additional_text:
-            label: Описание
-            span: left
-            type: text
-            tab: 'Дополнительные блоки'
+            form:
+                fields:
+                    additional_title:
+                        label: Заголовок
+                        span: full
+                        type: text
+                    additional_text:
+                        label: Текст
+                        size: huge
+                        span: full
+                        type: richeditor

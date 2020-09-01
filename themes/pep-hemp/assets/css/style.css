@@ -103,15 +103,17 @@ header.main-header {
     height: 100px;
     background-color: #1d1d1d;
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 999;
-    top: 0;
+    top: 51px;
 }
 
 header.main-header.--isScroled {
     background-color: #252525d4;
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
+    /*backdrop-filter: saturate(180%) blur(20px);*/
+    position: fixed;
+    top: 0;
 }
 
 .main-header__items {
@@ -1394,4 +1396,61 @@ input.ordering-field:checked + .label__form-field {
     letter-spacing: 0;
     text-align: center;
     max-width: 1080px;
+}
+
+td {
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.section-adv__container__content tbody {
+    background: #333;
+    border-radius: 12px;
+}
+
+/* PreHeader */
+
+
+.pre-header {
+    height: 50px;
+    border-bottom: 1px solid rgb(47 47 47);
+    background: #1d1d1d;
+    color: #f3f3f3;
+}
+
+.pre-header__content {
+    max-width: 80vw;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pre-header__address-holder {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.address-holder__title {
+    margin-left: 28px;
+    padding-bottom: 3px;
+    /*border-bottom: dashed 1px rgba(255, 255, 255, 0.57);*/
+    position: absolute;
+}
+
+
+.pre-header__phones {
+    display: flex;
+    flex-direction: row;
+}
+
+.pre-header__phone-item {
+    margin-left: 12px;
+}
+
+.phone-item__label {
+    /*color: #717171;*/
 }
